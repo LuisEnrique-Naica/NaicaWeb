@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Inversiones fáciles, rápidas y seguras para todos - Naica</title>
+</head>
+<body>
+    <nav class='navbar'>
+        <div class="contenedor ">
+            <div class="cont-nav">
+                <a href="">
+                    <img src=img/logohorizontalblanco.png alt="logonaica">
+                </a>
+            </div>
+            <div class="navegation">
+                <a href="#">MoneyBox</a>
+                <a href="#">Portafolio</a>
+                <a href="index.html">Naica</a>
+                <a href="#">Seguridad</a>
+                <a href="#">Descubre</a>
+                <a href="#">Contáctanos</a>
+                <a href="#">Acceso</a>
+            </div>
+        </div>
+        <div class="burger-button" id="burger-menu" onclick="myFunction(this), myFunction2()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+    </nav>
+    <section class="text-ayuda">
+        <div class="contenedor ayuda">
+          <h1>!LLego la ayuda!</h1>
+          <img src="img/ayuda/ayuda.svg" alt="">
+        </div>
+    </section>
+    <section class="cont-secc">
+      <div class="secciones contenedor">
+        <div>
+          <a href="">
+            <img src="img/ayuda/cuenta.svg" alt="">
+          <h6>Mi cuenta</h6>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="img/ayuda/paypal.svg" alt="">
+          <h6>Paypal</h6>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="img/ayuda/contrato.svg" alt="">
+          <h6>Como contratar</h6>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="img/ayuda/seguridad-dinero.svg" alt="">
+          <h6>Seguridad</h6>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="img/ayuda/invertimos.svg" alt="">
+          <h6>En que invertimos</h6>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="img/ayuda/agenda.svg" alt="">
+          <h6>Agenda tu cita</h6>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="cont-preguntas">
+      <div class="contenedor preguntas">
+        <div class="populares">
+          <img src="img/ayuda/preguntas.svg" alt="">
+          <h1>Preguntas más populares</h1>
+        </div>
+        <div class="mapa-preguntas">
+            <a href="">
+              ¿Cuáles son los beneficios?
+            </a>
+            <a href="">
+              ¿Cuáles son los requisitos y documentos para contratar un producto?
+            </a>
+            <a href="">
+              ¿Cuanto es lo mínimo que puedo invertir?
+            </a>
+            <a href="">
+              ¿Tiene algún riesgo mi inversión?
+            </a>
+            <a href="">
+              ¿Existen cobros por manejo o administración de cuenta?
+            </a>
+            <a href="">
+              ¿Cómo puedo solicitar mi estado de cuenta?
+            </a> 
+        </div>
+      </div>
+    </section>
+    <footer class="footernaica">
+      <div class="contenedor footer ">
+         <div class="mapa">
+           <a href="#">Ayuda</a>
+           <a href="#">Contacto</a>
+         </div>
+         <div class="mapa">
+           <a href="#">Invierte</a>
+           <a href="#">Moneybox</a>
+           <a href="#">Portafolio</a>
+         </div>
+         <div class="mapa">
+           <a href="">NAICA</a>
+           <a href="">Seguridad</a>
+         </div>
+         <div class="mapa">
+           <a href="#">Aprende de finanzas</a>
+           <a href="#">Blog</a>         
+         </div>
+       </div>
+       <b class="contenedor text-black fo">Si eres cliente de Naica puedes entrar a tu cuenta <a href=""> aquí.</a></b>
+
+       <section class="separador">
+         <div class="contenedor subfooter">
+             <b>XETER CORPORATION SC DE AP DE RL DE CV </b>
+             <a href="">Aviso de Privacidad</a>
+             <a href="">Terminos y condiciones</a>
+             <a href="">UNE</a>
+             <a href="">
+               <img src="" alt="">
+             </a>
+         </div>
+     </section>
+     
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+  
+    <script>
+  
+      const tablet = window.matchMedia('screen and (max-width:768px)')
+      const menu = document.querySelector('.navegation')
+      const burgerButton = document.querySelector('#burger-menu')
+      
+  
+  
+      tablet.addListener(validation)
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow);
+          
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
+        }
+  
+      }
+  
+      // menú lateral activar animación
+  
+      function hideShow() {
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active')
+          
+  
+        } else {
+          menu.classList.add('is-active')
+        }
+      }
+  
+  
+      burgerButton.addEventListener('click', (event) => {
+          menu.style.animationName = 'showSideNavbar';
+          menu.style.animationFillMode = 'forwards';
+          menu.style.animationDuration = '1s';
+        })
+    </script>
+  
+    <script>
+      function myFunction2(){
+        if(burgerButton.classList.contains('change')){
+          burgerButton.addEventListener('click', (event) => {
+            menu.style.animationName = 'hideSideNavbar';
+            menu.style.animationFillMode = 'forwards';
+            menu.style.animationDuration = '1s';
+          })
+      }else{
+        burgerButton.addEventListener('click', (event) => {
+          menu.style.animationName = 'showSideNavbar';
+          menu.style.animationFillMode = 'forwards';
+          menu.style.animationDuration = '1s';
+        })}
+      }
+    </script>
+</body>
+</html>

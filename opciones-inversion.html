@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/master.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<title>Inversiones fáciles, rápidas y seguras para todos - Naica</title>
+</head>
+<body>
+	<nav class='navbar'>
+		<div class="contenedor ">
+				<div class="cont-nav">
+						<a href="">
+								<img src=img/logohorizontalblanco.png alt="logonaica">
+						</a>
+				</div>
+				<div class="navegation">
+						<a href="#">MoneyBox</a>
+						<a href="#">Portafolio</a>
+						<a href="index.html">Naica</a>
+						<a href="#">Seguridad</a>
+						<a href="#">Descubre</a>
+						<a href="#">Contáctanos</a>
+						<a href="#">Acceso</a>
+				</div>
+		</div>
+	</nav>
+		<div class="burger-button" id="burger-menu" onclick="myFunction(this), myFunction2()">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+		</div>
+		<header class="cont-opc">
+			<div class="contenedor info-inversion">
+				<h1>Dos opciones de inversión</h1>
+				<h2 class="chiquito">Para todos los gustos</h2>
+				<section class="inv-monebox">
+					<img src="img/opcionesInversion/moneybox-01.png" alt="">
+					<h1>MONEYBOX</h1>
+				</section>
+				<h2>Para los que tienen un objetivo a corto o mediano plazo</h2>
+				<ul>
+					<li>·A partir de $100 MXN</li>
+					<li>·Cancela cuando quieras</li>
+					<li>·Recibe un bono anual</li>
+					<li>·El mejor rendimiento del mercado</li>
+					<li>·Logra tus metas y con lo que te sobra vuelve a invertir</li>
+					<li>·Fácil y rápido</li>
+					<li>·Tu dinero está seguro</li>
+					<li>·Puedes hacerlo desde tu casa</li>
+				</ul>
+				<div class="button-inversion">
+					<a href="#">
+						<button class="primi black  btn-clt">Conoce MoneyBox</button>
+					</a>
+				</div>
+
+				<div class="divider"></div>
+				<section class="inv-monebox">
+					<img src="img/opcionesInversion/portafolio-01.png" alt="">
+					<h1>PORTAFOLIO</h1>
+				</section>
+				<h2>Para los que prefieren el largo plazo</h2>
+				<ul>
+					<li>·A partir de $1000 MXN</li>
+					<li>·Debes esperar a que termine tu plazo contratado</li>
+					<li>·Hasta 16% de rendimiento anual</li>
+					<li>·Tu capital trabajará sin que te preocupes por nada</li>
+					<li>·Fácil y rápido</li>
+					<li>·Tu dinero está seguro</li>
+					<li>·Puedes hacerlo desde tu casa</li>
+				</ul>
+				<div class="button-inversion">
+					<a href="#">
+						<button class="primi black  btn-clt">Conoce Portafolio</button>
+					</a>
+				</div>
+			</div>
+		</header>
+		<footer class="footernaica">
+			<div class="contenedor footer ">
+				 <div class="mapa">
+					 <a href="#">Ayuda</a>
+					 <a href="#">Contacto</a>
+				 </div>
+				 <div class="mapa">
+					 <a href="#">Invierte</a>
+					 <a href="#">Moneybox</a>
+					 <a href="#">Portafolio</a>
+				 </div>
+				 <div class="mapa">
+					 <a href="">NAICA</a>
+					 <a href="">Seguridad</a>
+				 </div>
+				 <div class="mapa">
+					 <a href="#">Aprende de finanzas</a>
+					 <a href="#">Blog</a>         
+				 </div>
+			 </div>
+			 <b class="contenedor text-black fo">Si eres cliente de Naica puedes entrar a tu cuenta <a href=""> aquí.</a></b>
+
+			 <section class="separador">
+				 <div class="contenedor subfooter">
+						 <b>XETER CORPORATION SC DE AP DE RL DE CV </b>
+						 <a href="">Aviso de Privacidad</a>
+						 <a href="">Terminos y condiciones</a>
+						 <a href="">UNE</a>
+						 <a href="">
+							 <img src="" alt="">
+						 </a>
+				 </div>
+		 </section>
+	</footer>
+	<script>
+		function myFunction(x) {
+			x.classList.toggle("change");
+		}
+	</script>
+
+	<script>
+
+		const tablet = window.matchMedia('screen and (max-width:768px)')
+		const menu = document.querySelector('.navegation')
+		const burgerButton = document.querySelector('#burger-menu')
+		
+
+
+		tablet.addListener(validation)
+		function validation(event) {
+			if (event.matches) {
+				burgerButton.addEventListener('click', hideShow);
+				
+			} else {
+				burgerButton.removeEventListener('click', hideShow)
+			}
+
+		}
+
+		// menú lateral activar animación
+
+		function hideShow() {
+			if (menu.classList.contains('is-active')) {
+				menu.classList.remove('is-active')
+				
+
+			} else {
+				menu.classList.add('is-active')
+			}
+		}
+
+
+		burgerButton.addEventListener('click', (event) => {
+				menu.style.animationName = 'showSideNavbar';
+				menu.style.animationFillMode = 'forwards';
+				menu.style.animationDuration = '1s';
+			})
+	</script>
+
+	<script>
+		function myFunction2(){
+			if(burgerButton.classList.contains('change')){
+				burgerButton.addEventListener('click', (event) => {
+					menu.style.animationName = 'hideSideNavbar';
+					menu.style.animationFillMode = 'forwards';
+					menu.style.animationDuration = '1s';
+				})
+		}else{
+			burgerButton.addEventListener('click', (event) => {
+				menu.style.animationName = 'showSideNavbar';
+				menu.style.animationFillMode = 'forwards';
+				menu.style.animationDuration = '1s';
+			})}
+		}
+	</script>
+</body>
+</html>
