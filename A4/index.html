@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+    body {
+  background: rgb(204,204,204); 
+  font-family: 'Lato', sans-serif;
+}
+page {
+  background: white;
+  display: block;
+  margin: auto;
+  padding: 0.8cm;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+
+.titulo{
+  height: 5cm;
+  display: grid;
+  grid-template-columns: 70% 30%
+}
+
+.titulo img {
+  height: 4.5cm;
+}
+
+.clientes{
+  display: grid;
+  grid-template-columns: 45% 55%;
+  padding: 0.5cm 0;
+  font-size: 0.3cm;
+}
+
+.clientes div p {
+  margin-top: 0.1cm;
+}
+
+.portafolio{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: 1.2cm;
+}
+
+.portafolio p{
+  align-self: center;
+}
+
+.portafolio img{
+  height: 1cm;
+  margin-right: 1cm;
+}
+.porta{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tabla{
+  height: 14cm;
+  /* background-image: url('portafolio-01.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* opacity: 0.1; */
+}
+
+.tabla::before{
+  content: "";
+  position: absolute;
+  width: 21cm;
+  height: 14cm;
+  opacity: .1; 
+  background-image: url('portafolio-01.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.table-cliente{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-cliente thead tr th{
+  background-color: black;
+  color: white;
+  font-weight: 100;
+}
+
+.table-cliente thead tr th{
+  padding: 0.1cm;
+}
+
+.table-cliente tbody tr td{
+  text-align: center;
+  padding: 0.2cm;
+}
+
+
+.table-cliente tbody tr:nth-child(even){
+  background-color: #dedede;
+}
+
+.table-cliente tbody tr td:nth-child(1){
+  background-color: #d1e3fff7;
+}
+
+.table-cliente tfoot {
+  text-align: center;
+  padding: 0.2cm;
+}
+
+
+.isr{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 3cm;
+  margin: 1.2cm 0;
+}
+
+.cajita{
+  border: 0.1cm solid #d1e3fff7;
+  border-radius: 0.5cm;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0.6cm;
+}
+
+.footer p{
+  font-size: 0.22cm;
+  font-weight: lighter;
+  color: #818386a4; 
+}
+
+.footer span{
+  text-align: center;
+  font-size: 0.3cm;
+  font-weight: bolder;
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+</style>
+<body>
+    <page size="A4">
+      <div class="titulo">
+        <div>
+          <h2>Proyección de Portafolio</h2>
+          <p id="fecha">Fecha de emisión: </p><br>
+          <h3>Cliente: </h3>
+          <div class="clientes">
+            <div>
+              <p>Producto: </p>
+              <p>Capital inicial: </p>
+              <p>Periodo: </p>
+            </div>
+            <div>
+              <p>Rendimiento:: </p>
+              <p>Tasa promedio anual: </p>
+              <p>Total acumulado: </p>
+            </div>
+          </div>
+        </div>
+        <img src="naiaca.png" alt="">
+      </div>
+      <div class="portafolio">
+        <div class="porta">
+          <img src="portafolio-01.svg" alt="">
+          <h2>PORTAFOLIO</h2>
+        </div>
+        <p>Producto</p>
+      </div>
+      <div class="tabla">
+        <table class="table-cliente">
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th>Fecha de transacción </th>
+              <th>Capital inicial</th>
+              <th>Réditos</th>
+              <th>Capital acumulado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Total</th>
+              <td>NaN</td>
+              <td>Capital inicial</td>
+              <td>Total réditos</td>
+              <td>Total acumulado</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="isr">
+        <div></div>
+        <div class="cajita">
+          <p>*ISR:</p>
+          <p> Ingreso después de ISR:</p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>*Observación importante. La ley del impuesto sobre la renta (ISR) obliga a las instituciones financieras a retener el 1.45% anual de impuesto sobre las
+          ganancias generadas en el pago de intereses por inversiones. Esta retención se deduce de la tasa de rendimiento estipulada en cada contrato. En caso de que
+          lo requieras, solicita el comprobante de retención al finalizar el plazo de tu inversión para que puedas presentarlo en tu declaración anual de impuestos.</p><br>
+          <div style="text-align: center;">
+            <span>XETER CORPORATION, S.C. DE A.P. DE R.L. DE C.V</span><br>
+            <span>Av. Santa Fe 505, piso 1, Mezzanine 2span, Colonia Santa Fe, Cuajimalpa, CDMX | 800 624 2200 | naica.mx</b>
+            </div>
+          </div>
+    </page>
+</body>
+</html>
