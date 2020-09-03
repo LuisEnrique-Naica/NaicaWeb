@@ -1,0 +1,240 @@
+header{
+    background-image: url('../img/inicio/slide2.jpg');
+    background-color: black;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75%;
+    margin-top: 0;
+    width: 100%;
+}
+
+.separator-inicio{
+    width: 100%;
+    background-color: #000;
+    padding: 50px 0;
+}
+
+.navbar1{
+    transition: 0.5s ease;
+    padding: 1.1rem 0px;
+    background-color: transparent;
+    color: black;
+}
+
+
+.sticky{
+    background-color: black;
+    padding: 0.5rem 0px;
+}
+
+.navegation a, .navegation a:visited {
+    color: black;
+}
+
+.sticky .navegation a, .sticky .navegation a:visited {
+        color: white;
+}
+
+.money-inicio{
+    height: auto;
+    justify-self: center;
+}
+
+.money-inicio img{
+    height: 110px;
+}
+
+.bolitas{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.bolitas li{
+    margin: 5px 0;
+}
+
+.quienNaica{
+    height: auto;
+    background-image: url('../img/inicio/paraquienesexeter.jpg');
+    background-color: #e4f1ec;
+    background-position: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.texto-inicio{
+    color: black;
+}
+
+.lista-inicio ul li{
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.inv-ahorro{
+    color: black;
+    grid-template-columns: 35% 30% 35%;
+}
+
+
+.inv-center{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.versus{
+    font-size: 2rem;
+}
+
+.ahorro-inversion{
+    padding: 40px 0;
+    height: auto;
+}
+
+.grafica-inicio{
+    background-color: #414042;
+    padding:40px 0;
+    width: 100%;
+    height: auto;
+}
+
+.grafv1{
+    height: 60%;
+    display: block;
+    grid-template-columns: none;
+    grid-template-rows: none;
+}
+
+.buttongraf a{
+    justify-self: end;
+}
+
+.buttongraf{
+    margin: 30px auto;
+}
+
+.graf-icons{
+    padding: 50px 0;
+    color: black;
+    grid-template-columns: 33% 34% 33%;
+
+}
+
+.bk-inicio{
+    background-color: #ededef;
+
+}
+
+.graf-icons img {
+    margin: 0 auto;
+}
+
+.icons-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    padding: 30px;
+}
+
+.icons-details h1{
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.picto{
+    height: 110px;
+    margin: 15px auto;
+}
+
+.icons-details a {
+    margin: 15px 0;
+}
+
+.picto img{
+    height: 100%;
+}
+
+.misterio-inicio{
+    height: auto;
+    background-image: url('../img/inicio/misterio.jpg');
+    background-color: #e2e8eb;
+    background-position: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.misterio{
+    color: black;
+}
+
+.misterio h1{
+    margin:20px 0;
+}
+
+.misterio button{
+    margin:20px 0;
+}
+
+@media only screen and (max-width: 768px){
+    .continicio{
+        row-gap: 40px;
+    }
+
+    .quienNaica{
+        padding: 60px 30px;
+        height: auto;
+        background-position: bottom;
+    }
+
+    .button-inversion{
+        width: 40%;
+        margin-left: auto;
+    }
+
+    .inv-ahorro{
+        grid-template-rows: auto;
+        row-gap: 20px;
+        grid-template-columns: none;
+    }
+
+    .ahorro-inversion {
+        padding: 40px 30px;
+    }
+
+    .grafica-inicio {
+        padding: 40px 30px;
+    }
+    
+    .graf-icons {
+        grid-template-rows: auto;
+        grid-template-columns: none;
+    }
+
+    .misterio{
+        grid-template-columns: 54%;
+        grid-template-rows: none;
+    }
+
+    .misterio-inicio {
+        background-size: cover;
+        background-position: 45%;
+        padding: 30px;
+        height: auto;
+    }
+
+    .buttongraf  a button{
+        width: 154px;
+    }
+}

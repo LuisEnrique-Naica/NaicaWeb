@@ -1,0 +1,115 @@
+
+.text-ayuda{
+    background-color: #000;
+    grid-template-rows: none;
+    grid-template-columns: none;
+    padding: 23px 0;
+}
+.ayuda{
+    background-color: rgb(0, 0, 0);
+    margin: 60px auto;
+    grid-template-columns: 50% 50%;
+    column-gap: 25px;
+}
+
+div.ayuda img{
+    height: 160px;
+}
+
+div.ayuda h1{
+    justify-self: end;
+    align-self: center;
+}
+
+.cont-secc{
+    height: auto;
+    width: 100%;
+}
+
+.secciones{
+    padding: 30px 0;
+    grid-template-rows: none;
+    grid-template-columns: 16% 16% 16% 16% 16% 16% ;
+}
+
+.secciones div a img, .preguntas div img{
+    height: 90px;
+}
+
+.populares{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.populares img{
+    margin-right: 20px;
+}
+
+.secciones div a h6{
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.cont-preguntas{
+    height: auto;
+    margin: 30px auto;
+}
+
+.secciones div a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preguntas{
+    display: block;
+    height: auto;
+}
+
+.preguntas div h1{
+    color: black;
+}
+
+.mapa-preguntas{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.mapa-preguntas a {
+    margin: 10px 0;
+}
+
+
+@media only screen and (max-width: 768px){
+    
+    .text-ayuda{
+        padding: 30px;
+    }
+
+    .ayuda{
+        column-gap: 0;
+    }
+
+    .secciones{
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 25px;
+    }
+
+    .secciones div a img, .preguntas div img {
+        height: 50px;
+        margin: 10px;
+    }
+
+    .cont-secc {
+        padding: 20px;
+    }
+
+    .preguntas{
+        padding: 20px;
+    }
+}

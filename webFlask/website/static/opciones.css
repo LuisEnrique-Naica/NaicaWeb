@@ -1,0 +1,61 @@
+.cont-opc{
+    width: 100%;
+    height: auto;
+    background-image: none;
+    margin-top: 60px;
+}
+
+.info-inversion{
+    display:block;
+    height: auto;
+    padding: 20px 0;
+}
+
+.inv-monebox{
+    display: grid;
+    grid-template-columns: 15% 34%;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.inv-monebox img{
+    height: 110px;
+}
+
+.chiquito{
+    font-weight: 400;
+}
+
+.info-inversion ul {
+    list-style-type: none;
+}
+
+.info-inversion li {
+    margin: 5px 0;
+}
+
+
+.button-inversion{
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+}
+
+.divider{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 50px 0;
+}
+
+@media only screen and (max-width: 768px){
+ .cont-opc{
+     padding: 20px;
+     margin-top: 50px;
+ }
+
+ .inv-monebox{
+    grid-template-columns: none;
+    grid-template-rows: 50% 50%;
+ }
+}

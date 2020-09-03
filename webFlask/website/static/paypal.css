@@ -1,0 +1,58 @@
+.paypal-cont{
+    height: auto;
+    width: 100%;
+    margin-top: 60px;
+    padding-top: 15px;
+}
+
+.paypal-info{
+    margin: 15px auto;    
+    grid-template-columns: none;
+    grid-template-rows: auto;
+    height: auto;
+    color: #000000;
+}
+
+.paypal-info img{
+    height: 100px;
+}
+
+.paypal-info b {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.video-paypal{
+    margin: 0 auto;
+}
+
+.video-paypal{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-paypal iframe{
+    height: 300px;
+}
+
+.button-paypal{
+    grid-template-columns: auto;  
+}
+
+@media only screen and (max-width: 768px){
+    .paypal-cont{
+        padding: 20px;
+    }
+    
+    .video-paypal{
+        width: 100%;
+        height: auto;
+    }
+
+    .video-paypal iframe{
+        height: 300px;
+    }
+}
