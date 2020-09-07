@@ -19,7 +19,7 @@ header{
     transition: 0.5s ease;
     padding: 1.1rem 0px;
     background-color: transparent;
-    color: black;
+    /* color: black; */
 }
 
 
@@ -29,11 +29,11 @@ header{
 }
 
 .navegation a, .navegation a:visited {
-    color: black;
+    /* color: black; */
 }
 
 .sticky .navegation a, .sticky .navegation a:visited {
-        color: white;
+        /* color: white; */
 }
 
 .money-inicio{
