@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='master.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Inversiones fáciles, rápidas y seguras para todos - Naica</title>
+    <script src="{{url_for('static', filename='main.js')}}" async></script>
+</head>
+<body>
+    <nav class='navbar'>
+        <div class="contenedor ">
+            <div class="cont-nav">
+                <a href="">
+                    <img src="{{url_for('static',filename='img/logohorizontalblanco.png')}}" alt="logonaica">
+                </a>
+            </div>
+            <div class="navegation">
+                <a href="#">MoneyBox</a>
+                <a href="#">Portafolio</a>
+                <a href="index.html">Naica</a>
+                <a href="#">Seguridad</a>
+                <a href="#">Descubre</a>
+                <a href="#">Contáctanos</a>
+                <a href="#">Acceso</a>
+            </div>
+        </div>
+        <div class="burger-button" id="burger-menu" onclick="myFunction(this), myFunction2()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+   <footer class="footernaica">
+       <div class="contenedor footer ">
+          <div class="mapa">
+            <a href="#">Ayuda</a>
+            <a href="#">Contacto</a>
+          </div>
+          <div class="mapa">
+            <a href="#">Invierte</a>
+            <a href="#">Moneybox</a>
+            <a href="#">Portafolio</a>
+          </div>
+          <div class="mapa">
+            <a href="">NAICA</a>
+            <a href="">Seguridad</a>
+          </div>
+          <div class="mapa">
+            <a href="#">Aprende de finanzas</a>
+            <a href="#">Blog</a>         
+          </div>
+        </div>
+        <b class="contenedor text-black fo">Si eres cliente de Naica puedes entrar a tu cuenta <a href=""> aquí.</a></b>
+
+        <section class="separador">
+          <div class="contenedor subfooter">
+              <b>XETER CORPORATION SC DE AP DE RL DE CV </b>
+              <a href="">Aviso de Privacidad</a>
+              <a href="">Terminos y condiciones</a>
+              <a href="">UNE</a>
+              <a href="">
+                <img src="" alt="">
+              </a>
+          </div>
+      </section>
+   </footer>
+</body>
+</html>
