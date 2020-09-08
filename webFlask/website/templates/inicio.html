@@ -1,0 +1,170 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<header class="incio-bkg1">
+</header>
+<section class="separator-inicio">
+  <div class="continicio contenedor">
+    <div class="money-inicio">
+        <img src="{{url_for('static',filename='img/opcionesInversion/moneybox-01.png')}}" alt="">
+        <h1>MONEYBOX</h1>
+        <ul class="bolitas">
+          <li>·A partir de $100 MXN</li>
+          <li>·Recibe un bono anual</li>
+          <li>·Cancela cuando quieras</li>
+          <li>·Fácil y rápido</li>
+        </ul>
+        <div class="button-inversion">
+          <a href="#">
+            <button class="primi black  btn-clt">Conoce MoneyBox</button>
+          </a>
+        </div>
+
+    </div>
+    <div class="money-inicio">
+      <img src="{{url_for('static',filename='img/opcionesInversion/portafolio-01.png')}}" alt="">
+      <h1>PORTAFOLIO</h1>
+      <ul class="bolitas">
+        <li>·A partir de $1000 MXN</li>
+        <li>·Plazo Fijo</li>
+        <li>·Hasta 16% de rendimiento anual</li>
+        <li>·Fácil y rápido</li>
+      </ul>
+      <div class="button-inversion">
+        <a href="#">
+          <button class="primi black  btn-clt">Conoce Portafolio</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quienNaica">
+  <div class="contenedor texto-inicio">
+    <div>
+      <h1>¿Para  quién es Naica?</h1>
+    </div>
+    <div class="lista-inicio">
+      <ul>
+        <li>Para ti que quieres <b>lograr un objetivo </b> como irte de viaje, hacer una maestría o estar listo para cualquier imprevisto.</li>
+
+        <li>Para ti que <b>tienes un extra</b> y sabes que esconderlo bajo tu colchón o dejarlo en el banco no hara que tu dinero crezca.</li>
+
+        <li>Para todos los que crean que necesitamos <b>mejores herramientas financieras. </b></li>
+        
+        <li><b>Para ti también.</b></li>
+
+        <div class="button-inversion">
+          <a href="#">
+            <button class="primi black btn-clt">Enterate como</button>
+          </a>
+        </div>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="ahorro-inversion">
+  <div class="contenedor inv-ahorro">
+    <div class="inv-center">
+      <h1>AHORRO</h1>
+      <b>Cuando ahorras</b> solo apilas dinero y permanece estático, por lo que <b>al paso de los años puede devaluarse</b> debido a diversos factores económicos como la inflación.
+    </div>
+    <b class="inv-center versus">VS</b>
+    <div class="inv-center">
+      <h1>INVERSIÓN</h1>
+      <b>Cuando inviertes,</b> tu dinero trabaja en proyectos altamente productivos y al paso de los años tus rendimientos te permiten <b>tener más que cuando empezaste.</b>
+    </div>
+  </div>
+</section>
+
+<section class="grafica-inicio">
+  <div class="contenedor grafv1">
+    <p>Inversión de $1, 000 después de un año</p><br>
+    <canvas id="myChart"></canvas>
+  </div>
+  <div class="buttongraf contenedor">
+    <b>* Gráfica para uso informativo y de comparación exclusivamente.</b>
+    <a href="#">
+      <button class="primi black  btn-clt">Aprende mas</button>
+    </a>
+  </div>
+</section>
+
+<section class="bk-inicio">
+<div class="graf-icons contenedor">
+  <div class="icons-details">
+    <div class="picto">
+      <img src="{{url_for('static',filename='img/inicio/es-seguro.svg')}}" alt="seguro">
+    </div>
+    <h1>Es seguro</h1>
+   Jamás perderás tu dinero y tus datos estarán siempre seguros. Nuestro sistema se actualiza todo el tiempo contra hackeos y nos avalan instituciones nacionales e internacionales.
+    <a href="#">
+      <button class="primi black  btn-clt">Confía en nosotros</button>
+    </a>
+  </div>
+  <div class="icons-details">
+    <div class="picto">
+      <img src="{{url_for('static',filename='img/inicio/es-internacional.svg')}}" alt="seguro">
+    </div>
+    <h1>Experiencia internacional</h1>
+    Nuestra experiencia en finanzas nos ha sumado la confianza de clientes alrededor del mundo.<b>Nos faltas tú.</b>
+    <a href="#">
+      <button class="primi black  btn-clt">Conócenos</button>
+    </a>
+  </div>
+  <div class="icons-details">
+    <div class="picto">
+      <img src="{{url_for('static',filename='img/inicio/es-facil.svg')}}" alt="seguro">
+    </div>
+    <h1>Es fácil</h1>
+    Nosotros hacemos la parte difícil para que puedas divertirte mientras nosotros trabajamos por ti.
+    <a href="#">
+      <button class="primi black  btn-clt">Te contamos cómo</button>
+    </a>
+  </div>
+  <div class="icons-details">
+    <div class="picto">
+      <img src="{{url_for('static',filename='img/inicio/es-rapido.svg')}}" alt="seguro">
+    </div>
+    <h1>Es rápido</h1>
+    Nada de trámites engorrosos ni de estar horas en el teléfono solo para esperar una respuesta. Una vez que contrates, tu dinero estará trabajando en menos de 24 horas.
+    <a href="#">
+      <button class="primi black  btn-clt">¡Haz click rápido!</button>
+    </a>
+  </div>
+  <div class="icons-details">
+    <div class="picto">
+      <img src="{{url_for('static',filename='img/inicio/logra-mas.svg')}}" alt="seguro">
+    </div>
+    <h1>Logra más</h1>
+    Queremos que aprendas a invertir y a moverte en el mundo financiero. Te llevamos de la mano para que veas que no es tan difícil como pensabas.
+    <a href="#">
+      <button class="primi black  btn-clt">Comienza a aprender</button>
+    </a>
+  </div>
+  <div class="icons-details">
+    <div class="picto">
+      <img src="{{url_for('static',filename='img/inicio/por-ti.svg')}}" alt="seguro">
+    </div>  
+    <h1>Hazlo por ti</h1>
+    No tienes por qué depender de lo que el banco te ofrezca. <b>Tú tienes el poder de crear tu capital </b>y hacer todo lo que deseas para ti y tu familia.
+    <a href="#">
+      <button class="primi black  btn-clt">Tú puedes</button>
+    </a>
+  </div>
+</div>
+</section>
+
+<section class="misterio-inicio">
+  <div class="contenedor misterio">
+    <div>
+      <h1>Quítale el misterio a las finanzas</h1>
+      Una vez que te quites el miedo, nada podrá detenerte. ¿Qué es una tasa de interés? ¿Qué es una inversión a plazo fijo?<br>
+      <a href="#">
+        <button class="primi black  btn-clt">Nosotros te lo explicamos</button>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock content %}

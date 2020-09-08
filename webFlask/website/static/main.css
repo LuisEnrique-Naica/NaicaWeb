@@ -242,7 +242,7 @@ h6{
 }
   
 .bg1{
-     background-image: url('../img/ledecimosnoa.jpg');
+     background-image: url('./img/ledecimosnoa.jpg');
      background-repeat: no-repeat;
      background-color: #97adc5;
     background-position: center 40%;
@@ -282,7 +282,7 @@ h6{
 
 .bg2{
     margin-top: 50px;
-    background-image: url('../img/oficina1_enc2.jpg');
+    background-image: url('./img/oficina1_enc2.jpg');
     background-repeat: no-repeat;
     background-color: #97adc5;
    background-position: center 30%;
@@ -373,7 +373,7 @@ h6{
 .visitanos{
     width: 100%;
     height: 60%;
-    background-image: url('../img/oficina3_enc2.jpg');
+    background-image: url('./img/oficina3_enc2.jpg');
     background-repeat: no-repeat;
     background-color: #97adc5;
     background-position: center 60%;

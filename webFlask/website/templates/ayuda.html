@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="text-ayuda">
+    <div class="contenedor ayuda">
+      <h1>!LLego la ayuda!</h1>
+      <img src="{{url_for('static',filename='img/ayuda/ayuda.svg')}}" alt="">
+    </div>
+</section>
+<section class="cont-secc">
+  <div class="secciones contenedor">
+    <div>
+      <a href="">
+        <img src="{{url_for('static',filename='img/ayuda/cuenta.svg')}}" alt="">
+      <h6>Mi cuenta</h6>
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <img src="{{url_for('static',filename='img/ayuda/paypal.svg')}}" alt="">
+      <h6>Paypal</h6>
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <img src="{{url_for('static',filename='img/ayuda/contrato.svg')}}" alt="">
+      <h6>Como contratar</h6>
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <img src="{{url_for('static',filename='img/ayuda/seguridad-dinero.svg')}}" alt="">
+      <h6>Seguridad</h6>
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <img src="{{url_for('static',filename='img/ayuda/invertimos.svg')}}" alt="">
+      <h6>En que invertimos</h6>
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <img src="{{url_for('static',filename='img/ayuda/agenda.svg')}}" alt="">
+      <h6>Agenda tu cita</h6>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="cont-preguntas">
+  <div class="contenedor preguntas">
+    <div class="populares">
+      <img src="img/ayuda/preguntas.svg" alt="">
+      <h1>Preguntas más populares</h1>
+    </div>
+    <div class="mapa-preguntas">
+        <a href="">
+          ¿Cuáles son los beneficios?
+        </a>
+        <a href="">
+          ¿Cuáles son los requisitos y documentos para contratar un producto?
+        </a>
+        <a href="">
+          ¿Cuanto es lo mínimo que puedo invertir?
+        </a>
+        <a href="">
+          ¿Tiene algún riesgo mi inversión?
+        </a>
+        <a href="">
+          ¿Existen cobros por manejo o administración de cuenta?
+        </a>
+        <a href="">
+          ¿Cómo puedo solicitar mi estado de cuenta?
+        </a> 
+    </div>
+  </div>
+</section>
+{% endblock content %}

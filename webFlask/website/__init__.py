@@ -11,3 +11,19 @@ def home():
 @app.route("/finanzas")
 def finanzas():
     return render_template('finanzas.html')
+
+@app.route("/ayuda")
+def ayuda():
+    return render_template('ayuda.html')
+    
+@app.route("/inicio")
+def inicio():
+    return render_template('inicio.html')
+    
+@app.route("/inversion")
+def inversion():
+    return render_template('opciones-inversion.html')
+    
+@app.route("/paypal")
+def paypal():
+    return render_template('paypal.html')

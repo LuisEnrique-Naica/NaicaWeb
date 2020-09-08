@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<section class="paypal-cont">
+    <div class="contenedor paypal-info">
+      <img src="{{url_for('static',filename='img/ayuda/paypal.svg')}}" alt="">
+      <h1>¿Qué es PayPal?</h1><br><br>
+      <b>
+        Es uno de los métodos de pago en línea más seguros del mundo. Durante 20 años se han encargado de que suplataforma sea muy fácil de usar, compatible en prácticamente todos los sistemas operativos y con presencia en todo el globo terráqueo. <br><br>
+
+        Puedes hacer pagos, recibir dinero, ligar tus tarjetas de débito o crédito e incluso tus cuentas bancarias. <br><br>
+
+        Millones de negocios utilizan PayPal como su sistema de pago. Es muy seguro pagar con PayPal, porque quien recibe tu pago no tiene acceso de ninguna forma a los datos de tu tarjeta ni de tu cuenta. <br><br>
+
+        Lo único que necesitas para pagar es ingresar tu correo y contraseña, por lo que ni siquiera necesitas sacar la tarjeta de tu cartera. <br><br>
+
+        Para nosotros es muy importante mantener la confidencialidad de tus datos bancarios y por eso, elegimos esta plataforma. <br><br>
+      </b>
+      <div class="video-paypal">
+        <iframe class="frame-paypal"  src="https://www.youtube.com/embed/ptnZToj4Ss4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="button-paypal">
+          <a href="#">
+            <button class="primi black">Conoce más de PayPal</button>
+         </a>
+         <a href="#">
+          <button class="primi black">Abre tu cuenta</button>
+       </a>
+        </div>
+      </div>
+    </div>
+    <div class="secciones contenedor">
+      <div>
+        <a href="">
+          <img src="{{url_for('static',filename='img/ayuda/cuenta.svg')}}" alt="">
+        <h6>Mi cuenta</h6>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="{{url_for('static',filename='img/ayuda/paypal.svg')}}" alt="">
+        <h6>Paypal</h6>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="{{url_for('static',filename='img/ayuda/contrato.svg')}}" alt="">
+        <h6>Como contratar</h6>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="{{url_for('static',filename='img/ayuda/seguridad-dinero.svg')}}" alt="">
+        <h6>Seguridad</h6>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="{{url_for('static',filename='img/ayuda/invertimos.svg')}}" alt="">
+        <h6>En que invertimos</h6>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="{{url_for('static',filename='img/ayuda/agenda.svg')}}" alt="">
+        <h6>Agenda tu cita</h6>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {% endblock content %}

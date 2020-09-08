@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+<header class="cont-opc">
+    <div class="contenedor info-inversion">
+        <h1>Dos opciones de inversión</h1>
+        <h2 class="chiquito">Para todos los gustos</h2>
+        <section class="inv-monebox">
+            <img src="{{ url_for('static',filename='img/opcionesInversion/moneybox-01.png')}}" alt="">
+            <h1>MONEYBOX</h1>
+        </section>
+        <h2>Para los que tienen un objetivo a corto o mediano plazo</h2>
+        <ul>
+            <li>·A partir de $100 MXN</li>
+            <li>·Cancela cuando quieras</li>
+            <li>·Recibe un bono anual</li>
+            <li>·El mejor rendimiento del mercado</li>
+            <li>·Logra tus metas y con lo que te sobra vuelve a invertir</li>
+            <li>·Fácil y rápido</li>
+            <li>·Tu dinero está seguro</li>
+            <li>·Puedes hacerlo desde tu casa</li>
+        </ul>
+        <div class="button-inversion">
+            <a href="#">
+                <button class="primi black  btn-clt">Conoce MoneyBox</button>
+            </a>
+        </div>
+
+        <div class="divider"></div>
+        <section class="inv-monebox">
+            <img src="{{ url_for('static',filename='img/opcionesInversion/portafolio-01.png')}}" alt="">
+            <h1>PORTAFOLIO</h1>
+        </section>
+        <h2>Para los que prefieren el largo plazo</h2>
+        <ul>
+            <li>·A partir de $1000 MXN</li>
+            <li>·Debes esperar a que termine tu plazo contratado</li>
+            <li>·Hasta 16% de rendimiento anual</li>
+            <li>·Tu capital trabajará sin que te preocupes por nada</li>
+            <li>·Fácil y rápido</li>
+            <li>·Tu dinero está seguro</li>
+            <li>·Puedes hacerlo desde tu casa</li>
+        </ul>
+        <div class="button-inversion">
+            <a href="#">
+                <button class="primi black  btn-clt">Conoce Portafolio</button>
+            </a>
+        </div>
+    </div>
+</header>
+{% endblock content %}

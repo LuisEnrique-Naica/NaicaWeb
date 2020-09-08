@@ -1,6 +1,6 @@
-header{
-    background-image: url('../img/inicio/slide2.jpg');
-    background-color: black;
+.incio-bkg1{
+    background-image: url('./img/inicio/slide2.jpg');
+    /* background-color: black; */
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ header{
 
 .quienNaica{
     height: auto;
-    background-image: url('../img/inicio/paraquienesexeter.jpg');
+    background-image: url('./img/inicio/paraquienesexeter.jpg');
     background-color: #e4f1ec;
     background-position: 40%;
     background-size: contain;
@@ -165,7 +165,7 @@ header{
 
 .misterio-inicio{
     height: auto;
-    background-image: url('../img/inicio/misterio.jpg');
+    background-image: url('./img/inicio/misterio.jpg');
     background-color: #e2e8eb;
     background-position: 80%;
     background-size: contain;
