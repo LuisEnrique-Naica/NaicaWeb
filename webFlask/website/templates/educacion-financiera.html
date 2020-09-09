@@ -1,0 +1,102 @@
+{% extends "layout2.html" %}
+{% block content %}
+  <section class="main-financiera">
+    <div class="content">
+      <span class="title">Descubre el mundo de las finanzas, elimina el miedo y retira</span>
+      <span class="title2">todas esas telarañas, ¡es momento de que tengas tus propias estrategias financieras!</span>
+      <span class="subtitle">
+        Dile adiós a los malos hábitos financieros
+      </span>
+      <div class="icons">
+        <div class="unique-icons">
+        <img src="{{ url_for('static', filename='img/finanzas/finanzas-01.svg') }}" alt="endeudarte">
+        <p><span class="negrita">Sobre endeudarte.</span> Trata de pagar el saldo completo de tu tarjeta de crédito cada mes y no adquieras lo que está más allá de tus posibilidades reales.</p>
+      </div>
+      <div class="unique-icons">
+        <img src="{{ url_for('static', filename='img/finanzas/finanzas-02.svg') }}" alt="intereses">
+        <p><span class="negrita">Comprar a meses sin intereses.</span> Solo aplicas los MSI a aquellas compras que te van a durar mucho más que el tiempo que tardarás en pagarlas.</p>
+      </div>
+      <div class="unique-icons">
+        <img src="{{ url_for('static', filename='img/finanzas/finanzas-03.svg') }}" alt="presupuesto">
+        <p><span class="negrita">No tener un presupuesto. </span>Haz una lista de tus gastos fijos: renta, agua, luz, internet, comida, transporte, etc., y luego compárala con tus ingresos. De esta forma sabrás de cuánto dinero adicional podrás disponer.</p>
+      </div>
+      <div class="unique-icons">
+        <img src="{{ url_for('static', filename='img/finanzas/finanzas-04.svg') }}" alt="impulso">
+        <p><span class="negrita">Comprar por impulso. </span>Haz tu presupuesto, revisa tus prioridades y adquiere lo que te acerque a tus metas personales. Dile NO a comprar cosas que no necesitas, y a suscribirte a todos los servicios de streaming.</p>
+      </div>
+      <div class="unique-icons">
+        <img src="{{ url_for('static', filename='img/finanzas/finanzas-05.svg') }}" alt="estilo_vida">
+        <p><span class="negrita">Tener un estilo de vida por arriba de tus posibilidades</span>No está mal darte tus gustos, pero muchos son innecesarios. Mejor pregúntate: ¿Te sobra algo que puedes invertir? ¿Tienes un porcentaje destinado a imprevistos o te truenas los dedos para pagar lo que compras?</p>
+      </div>
+      <div class="unique-icons">
+        <div></div>
+        <p>Recuerda, siempre hay forma de disminuir tus gastos y seguir disfrutando la vida.</p>
+      </div>
+      <div class="unique-icons">
+        <div></div>
+        <p class="enlace">¡Obtén una asesoría gratuita! ></p>
+      </div>
+    </div>
+
+    <div class="shadow-box">
+      <div>
+        <p>Por mucho tiempo, el sistema nos hizo creer que hablar de temas de dinero era difícil y que solo unos cuantos sabrían cómo manejarlo; sin embargo, tu dinero es tuyo, tú lo ganaste, por eso es importante que sepas cómo utilizarlo y conocer las mejores estrategias para cosechar los frutos de tu trabajo y esfuerzo. <br><br>
+
+          Queremos ayudarte a entender este mundo y brindarte las herramientas más eficientes y amigables para que puedas alcanzar todas tus metas financieras.
+          </p>
+      </div>
+      <img src="{{ url_for('static',filename='img/portafoliom.jpg') }}" alt="maceta">
+    </div>
+    <h1 class="title">Glosario</h1>
+    <div class="glosario">
+      <div class="glo-icons">
+        <div class="icons1">
+          <img src="{{ url_for('static', filename='img/finanzas/finanzas-01.svg') }}" alt="ahorro">
+                  <p><span class="negrita">Ahorro</span><br> Excedente de cualquier bien económico al final de un periodo. </p>
+        </div>
+        <div class="icons1">
+          <img src="{{ url_for('static', filename='img/finanzas/finanzas-02.svg') }}" alt="capital">
+                  <p><span class="negrita">Capital</span><br> Dinero o patrimonio monetario que tiene una institución o persona.</p>
+        </div>
+        <div class="icons1">
+          <img src="{{ url_for('static', filename='img/finanzas/finanzas-03.svg') }}" alt="finanzas">
+                  <p><span class="negrita">Finanzas</span><br> Rama de la economía que estudia las actividades y el intercambio de dinero.</p>
+        </div>
+        <div class="icons1">
+          <img src="{{ url_for('static', filename='img/finanzas/finanzas-04.svg') }}" alt="fortuna">
+                  <p><span class="negrita">Fortuna</span><br> La fortuna o riqueza es la posesión privada de bienes, sin importar su origen.</p>
+        </div>
+        <div class="icons1">
+          <img src="{{ url_for('static', filename='img/finanzas/finanzas-05.svg') }}" alt="inflacion">
+                  <p><span class="negrita">Inflación</span><br> Aumento generalizado y sostenido del nivel de precios existentes en el mercado durante un periodo de tiempo.</p>
+        </div>
+      </div>
+      <!-- parte dos -->
+      <div class="glo-icons">
+        <div class="glo-icons">
+          <div class="icons1">
+            <img src="{{ url_for('static', filename='img/finanzas/finanzas-01.svg') }}" alt="intereses">
+                    <p><span class="negrita">Intereses</span><br> Porcentaje adicional de capital que se cobra al proporcionar un crédito.</p>
+          </div>
+          <div class="icons1">
+            <img src="{{ url_for('static', filename='img/finanzas/finanzas-02.svg') }}" alt="inversion">
+                    <p><span class="negrita">Inversión</span><br> Colocación de capital en una operación, proyecto o iniciativa con el fin de recuperarlo con intereses en caso de que el mismo genere ganancias. </p>
+          </div>
+          <div class="icons1">
+            <img src="{{ url_for('static', filename='img/finanzas/finanzas-03.svg') }}" alt="plazos">
+                    <p><span class="negrita">Plazos en una inversión</span><br> Lapso de tiempo en que la entidad financiera invertirá el capital en proyectos que considere viables y seguros para obtener mayores rendimientos</p>
+          </div>
+          <div class="icons1">
+            <img src="{{ url_for('static', filename='img/finanzas/finanzas-04.svg') }}" alt="reditos">
+                    <p><span class="negrita">Réditos</span><br> Utilidad o beneficio que genera el capital invertido. </p>
+          </div>
+          <div class="icons1">
+            <img src="{{ url_for('static', filename='img/finanzas/finanzas-05.svg') }}" alt="tasas-intereses">
+                    <p><span class="negrita">Tasa de interés</span><br> Cantidad de dinero que se paga de acuerdo con una operación financiera que se lleva a cabo.  
+                    </p>
+          </div>
+      </div>
+    </div>
+  </div>
+  </section>
+{% endblock content %}

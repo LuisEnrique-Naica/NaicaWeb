@@ -27,3 +27,7 @@ def inversion():
 @app.route("/paypal")
 def paypal():
     return render_template('paypal.html')
+    
+@app.route("/educacion-financiera")
+def financiera():
+    return render_template('educacion-financiera.html')
