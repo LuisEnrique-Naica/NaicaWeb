@@ -1,0 +1,71 @@
+.container{
+    width: 500px;
+}
+
+/* .palito{
+    stroke-dashoffset: 800;
+    stroke-dasharray: 800;
+} */
+
+.palito4, .palito5, .palito6{
+    animation: palitosD 1.2s infinite ease-in-out alternate;    
+}
+
+.palito1, .palito2, .palito3{
+    animation: palitosI 1.2s infinite ease-in-out alternate;
+    
+    
+}
+
+.estrella, .st2{
+    animation: star 3s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#cuerpos, .cabezaI, .cabezaD, .st1, .st0{
+    animation: bois 1.2s infinite ease-in-out alternate;
+    transform-origin: bottom;
+}
+
+@keyframes star {
+    from{
+        transform: rotateZ(0deg) rotateX(0deg);
+        
+    }
+    to{
+        transform: rotateZ(360deg) rotateX(15deg);
+        
+    }
+}
+
+@keyframes bois {
+    from{
+        transform: rotateX(0deg) scaleY(1.04) scaleX(1);
+        
+    }
+    to{
+        transform: rotateX(15deg) scaleY(1) scaleX(0.95);
+    }
+}
+
+@keyframes palitosD {
+    from{
+        transform: rotateY(0deg)  translate(4px, 1px);
+        
+    }
+    to{
+        transform: rotateY(15deg)  translate(3px, 1.2px);;
+    }
+}
+
+
+@keyframes palitosI {
+    from{
+        transform: rotateY(0deg)  translate(-5px, 1px);
+        
+    }
+    to{
+        transform: rotateY(-15deg)  translate(-2.8px, 1.2px);;
+    }
+}
