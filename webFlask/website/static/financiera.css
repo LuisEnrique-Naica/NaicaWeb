@@ -10,8 +10,8 @@
 }
 
 .main-financiera{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
 .content{
@@ -65,8 +65,8 @@
 
 
 
-.unique-icons img{
-    width: 80px;
+.unique-icons svg, .unique-icons img{
+    width: 110px;
 }
 
 .negrita{
@@ -104,7 +104,7 @@
     grid-template-columns: 50% 50%;
     font-family: 'Lato', sans-serif;
     height: auto ;
-    margin: ;
+    margin: 0 auto ;
     font-size: 1.4rem;
 }
 
@@ -120,6 +120,698 @@
     text-align: start;
 }
 
-.icons1 img{
-    height: 60px;
+.icons1 img, .icons1 svg{
+    height: 80px;
+}
+
+.dolar, #colors{
+    animation: dollar 3s ease-in-out;
+}
+/* 
+#colors{
+    stroke: #000000;
+    
+} */
+
+
+.all{
+    stroke: #000000;
+    fill: transparent;
+    stroke-width: 0.5%;
+     stroke-dasharray: 420;
+    /* stroke-dashoffset: 200;  */
+    animation: fill 3s ease-in-out forwards;
+}
+
+@keyframes fill {
+
+    0%{
+        transform: scale3d(1,1,1);
+        stroke-dashoffset: 420;
+    }
+    50%{
+        transform: scale3d(1.03,1.03,1.03);
+        stroke-dashoffset: 300;
+    }
+    100%{
+        transform: scale3d(1,1,1);
+        stroke-dashoffset: 0;
+        fill: #000000;
+    }
+}
+
+@keyframes dollar {
+    0%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+.st0{
+    fill:#B6CE72;
+}
+.st1{
+    fill:#88BA46;
+}
+.st2{
+    fill:#DAE3EA;
+}
+.st3{
+    fill:#7C959C;
+}
+
+.tarjeta{
+    fill:#D0D2D3;
+}
+.signo{
+    fill:#ABBED7;
+}
+.firma{
+    fill:#FFFFFF;
+}
+
+.flecha{
+    fill:#B6CE72;
+}
+
+#todo-chequera{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.4%;
+    animation: fill-stroke 3s ease-in-out forwards;
+}
+
+@keyframes fill-stroke {
+    0%{
+        stroke-dashoffset: 420;
+    }
+    50%{
+        stroke-dashoffset: 210; 
+    }
+    100%{
+        stroke-dashoffset: 0;
+        fill: #000000;
+    }
+}
+
+@keyframes moving-arrow{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(8px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.exclamacion{
+    animation: exclamacion 2s ease-in-out forwards;
+}
+
+@keyframes exclamacion{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    50%{
+        transform: scale3d(1.2,1.2,1.2);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    50%{
+        transform: scale3d(0.9,0.9,0.9);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+
+
+#subflecha, .flecha{
+    animation: moving-arrow 2s ease-in-out forwards;
+}
+
+
+#chequera{
+    stroke: #000000;
+    stroke-width: 0.4%;
+    animation: dollar 3s ease-in-out forwards;
+}
+.pasta{
+    fill:#7C959C;
+}
+.cuadros-bajos{
+    fill:#DAE3EA;
+}
+.fondo-calendario{
+    fill:#FFFFFF;
+}
+.meses{
+    fill:#A5BE95;
+}
+.marcos{
+    fill:#69A0CB;
+}
+
+#all-calendario{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.4%;
+    animation: fill-stroke 3s ease-in-out forwards;
+}
+
+#todo-cal{
+    animation: bounce 2s ease-in-out forwards;
+    transform-origin: center;
+}
+
+#color-calendario{
+    animation: dollar 3s ease-in-out forwards;
+}
+
+
+.tarjeta-fondo{
+    fill:#DAE3EA;
+}
+.tarjeta-azul{
+    fill:#69A0CB;
+}
+.fondoblanco{
+    fill:#FFFFFF;
+}
+.fondogris{
+    fill:#CFD0D3;
+}
+
+#cards{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.4%;
+    animation: fill-stroke  3s ease-in-out forwards;
+}
+
+.card-excl{
+    animation: bounce 1.7s ease-in-out forwards;
+    transform-origin: center;
+}
+
+#colors-cards{
+    animation: dollar 3s ease-in-out forwards;
+}
+
+
+.azuldiam{
+    fill:#ABBED7;
+}
+.azulosc{
+    fill:#7F9FC3;
+}
+
+#diam-fill{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.4%;
+    animation: fill-stroke  3s ease-in-out forwards;
+}
+
+#colors-diam{
+    animation: dollar 3s ease-in-out forwards;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(60deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+
+
+#diam-bounce{
+    animation: rotate 3s ease-in-out forwards;
+    transform-origin: center;
+}
+
+
+.cochino1{
+    fill:#B6CE72;
+}
+.cochino2{
+    fill:#88BA46;
+}
+
+#cochino-normal{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.4%;
+    animation: fill-stroke  3s ease-in-out forwards;
+}
+
+.dolar-cochino{
+    animation: rotate 3s ease-in-out forwards;
+    transform-origin: center;
+}
+
+#cochino-color{
+    animation: dollar 3s ease-in-out forwards;
+}
+
+/* capital */
+
+.azul-moneda{
+    fill:#69A0CB;
+}
+.verde-moneda{
+    fill:#B6CE72;
+}
+.azul-oscuro{
+    fill:#ABBED7;
+}
+
+.azul-moneda2{
+    fill:#4892C3;
+}
+.moneda-verde{
+    fill:#88BA46;
+}
+.azul-oscuro2{
+    fill:#7F9FC3;
+}
+
+
+@keyframes rotate-capital{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+#capital-svg{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.4%;
+    animation: fill-stroke  3s ease-in-out forwards;
+}
+
+.rotate-dolar{
+    animation: rotate-capital 3s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+/* billetes finanzas */
+
+.verde-cash1{
+    fill:#88BA46;
+}
+.verde-cash2{
+    fill:#279346;
+}
+.verde-cash3{
+    fill:#B6CE72;
+}
+.verde-cash4{
+    fill:none;
+    stroke:#000000;
+    stroke-width:0.5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+#billetealto{
+    animation: move1 3s ease-in-out forwards;
+}
+
+#billetemedio{
+    animation: move2 3s ease-in-out forwards;
+}
+
+#billetebajo{
+    animation: move3 3s ease-in-out forwards;
+}
+
+@keyframes move1{
+    0%{
+        transform:translate(70px, 0px);
+    }
+    33%{
+        transform:translate(0px, 0px);
+    }
+    66%{
+        transform:translate(0px, 0px);
+    }
+    100%{
+        transform:translate(0px, 0px);
+    }
+}
+
+@keyframes move2{
+    0%{
+        transform:translate(80px, 0px);
+    }
+    33%{
+        transform:translate(80px, 0px);
+    }
+    66%{
+        transform:translate(0px, 0px);
+    }
+    100%{
+        transform:translate(0px, 0px);
+    }
+}
+
+@keyframes move3{
+    0%{
+        transform:translate(95px, 0px);
+    }
+    33%{
+        transform:translate(95px, 0px);
+    }
+    66%{
+        transform:translate(95px, 0px);
+    }
+    100%{
+        transform:translate(0px, 0px);
+    }
+}
+
+/* fortuna jarron */
+
+.jarron1{
+    fill:#C9C5BD;
+}
+.jarron2{
+    fill:#A8A193;
+}
+.paloma-jarron{
+    fill:#69A0CB;
+}
+.dollar-jarron{
+    fill:#B6CE72;
+}
+
+
+#all-jarron{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.4%;
+    animation: fill-stroke 3s ease-in-out forwards;
+}
+
+#jarron-color{
+    animation: dollar 3s ease-in-out forwards;
+}
+
+/* grafica */
+#fill-grafica{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.9%;
+    animation: fill-stroke 3s ease-in-out forwards;
+}
+
+.fila1grap{
+    fill:#B6CE72;
+    animation: fila1grap 2s ease-in-out forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+.fila2grap{
+    fill:#A5BE95;
+    animation: fila2grap 2s ease-in-out forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+.fila3grap{
+    fill:#69A0CB;
+    animation: fila3grap 2s ease-in-out forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+.fila4grap{
+    fill:#ABBED7;
+    animation: fila4grap 2s ease-in-out forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+
+
+@keyframes fila1grap{
+    0%{
+        transform:scaleY(0);
+    }
+    25%{
+        transform:scaleY(1);
+    }
+    50%{
+        transform:scaleY(1);
+    }
+    75%{
+        transform:scaleY(1);
+    }
+    100%{
+        transform:scaleY(1);
+    }
+}
+
+
+@keyframes fila2grap{
+    0%{
+        transform:scaleY(0);
+    }
+    25%{
+        transform:scaleY(0);
+    }
+    50%{
+        transform:scaleY(1);
+    }
+    75%{
+        transform:scaleY(1);
+    }
+    100%{
+        transform:scaleY(1);
+    }
+}
+
+
+@keyframes fila3grap{
+    0%{
+        transform:scaleY(0);
+    }
+    25%{
+        transform:scaleY(0);
+    }
+    50%{
+        transform:scaleY(0);
+    }
+    75%{
+        transform:scaleY(1);
+    }
+    100%{
+        transform:scaleY(1);
+    }
+}
+
+
+@keyframes fila4grap{
+    0%{
+        transform:scaleY(0);
+    }
+    25%{
+        transform:scaleY(0);
+    }
+    50%{
+        transform:scaleY(0);
+    }
+    75%{
+        transform:scaleY(0);
+    }
+    100%{
+        transform:scaleY(1);
+    }
+}
+
+
+/* intereses */
+
+.circulo-interes{
+    fill:#7C959C;
+}
+.interes-dentro{
+    fill:#B6CE72;
+}
+.interes-dentro2{
+    fill:#88BA46;
+}
+.interes-mas{
+    fill:#A5BE95;
+}
+
+
+#fill-intereses{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.9%;
+    animation: fill-stroke 3s ease-in-out forwards;
+}
+
+#interes-color{
+    animation: dollar 3s ease-in-out forwards;
+}
+
+
+/* inversion */
+
+.inversion{
+    fill:#BBBDBF;
+    animation: fila3grap 3s ease-in-out forwards;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+.inversion1{
+    fill:#808184;
+    animation: fila2grap 3s ease-in-out forwards;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#allinversion{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.9%;
+    animation: fill-stroke 5s ease-in-out forwards;
+}
+ /* plazo largo */
+
+.fondoplazo{
+    fill:#FFFFFF;
+}
+.fondoplazoV{
+    fill:#A4BE95;
+}
+.fondoazul{
+    fill:#68A0CB;
+}
+.letrasplazo{
+    fill:#010101;
+}
+
+.letrasplazo{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.3%;
+    animation: fill-stroke 2s ease-in-out forwards;
+}
+
+#color-plazo{
+    animation: dollar 3s ease-in-out forwards;
+}
+
+/* reditos */
+
+.mitadIz{
+    fill:#ABBED7;
+    animation: fila2grap 3s ease-in-out forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+.mitadDr{
+    fill:#7F9FC3;
+    animation: fila2grap 3s ease-in-out forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+.circulo-redito{
+    fill:#A5BE95;
+}
+
+#reditos-stroke{
+    stroke-dasharray: 300;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 1%;
+    animation: fill-stroke-reditos 4s  forwards;
+}
+
+@keyframes fill-stroke-reditos {
+    0%{
+        stroke-dashoffset: 300;
+    }
+    50%{
+        stroke-dashoffset: 150; 
+    }
+    100%{
+        stroke-dashoffset: 0;
+        fill: #000000;
+    }
+}
+
+/* tasa de interes */
+
+.tasaIZ{
+    fill:#B6CE72;
+}
+.tasaDR{
+    fill:#88BA46;
+}
+
+
+#tasa-stroke{
+    stroke-dasharray: 420;
+    fill: transparent;
+    stroke: #000000;
+    stroke-width: 0.5%;
+    animation: fill-stroke 4s  forwards;
+}
+
+.tasaIZ,.tasaDR{
+    animation: dollar 3s ease-in-out forwards;
+}
+
+.piramideIZ{
+    fill:#ABBED7;
+    animation: fila2grap 3s ease-in-out forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+.piramideDR{
+    fill:#7F9FC3;
+    animation: fila2grap 3s ease-in-out forwards;
+    transform-origin: bottom;
+    transform-box: fill-box;
 }
