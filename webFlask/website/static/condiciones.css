@@ -30,3 +30,18 @@
 .negrita{
     font-weight: bold;
 }
+
+@media only screen and (max-width: 768px){
+    .title-condiciones{
+        grid-template-rows: auto;
+        grid-template-columns: none;
+    }
+
+    .contenedor{
+        width: 90%;
+    }
+
+    .main-condiciones p {
+        font-size: 1.2rem;
+    }
+}
