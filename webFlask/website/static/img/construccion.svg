@@ -3,18 +3,18 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 57.7 57.9" style="enable-background:new 0 0 57.7 57.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#BBBDBF;}
-	.st1{fill:#808184;}
+	.inversion{fill:#BBBDBF;}
+	.inversion1{fill:#808184;}
 </style>
 <g>
 	<g>
-		<path class="st0" d="M29.1,56.7H1.6V4.1c0-1.5,1.2-2.7,2.7-2.7h22.1c1.5,0,2.7,1.2,2.7,2.7L29.1,56.7z"/>
+		<path class="inversion" d="M29.1,56.7H1.6V4.1c0-1.5,1.2-2.7,2.7-2.7h22.1c1.5,0,2.7,1.2,2.7,2.7L29.1,56.7z"/>
 	</g>
 	<g>
-		<path class="st1" d="M23.2,56.7h5.8l0-52.5c0-1.5-1.2-2.7-2.7-2.7h-3.2L23.2,56.7z"/>
+		<path class="inversion1" d="M23.2,56.7h5.8l0-52.5c0-1.5-1.2-2.7-2.7-2.7h-3.2L23.2,56.7z"/>
 	</g>
 	<g>
-		<path class="st1" d="M29.1,56.7h27.5V25.5c0-1.5-1.2-2.7-2.7-2.7H31.7c-1.5,0-2.7,1.2-2.7,2.7L29.1,56.7z"/>
+		<path class="inversion1" d="M29.1,56.7h27.5V25.5c0-1.5-1.2-2.7-2.7-2.7H31.7c-1.5,0-2.7,1.2-2.7,2.7L29.1,56.7z"/>
 	</g>
 </g>
 <g>

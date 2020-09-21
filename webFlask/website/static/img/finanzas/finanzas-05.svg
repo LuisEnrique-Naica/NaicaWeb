@@ -3,16 +3,16 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 57.6 58" style="enable-background:new 0 0 57.6 58;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#B6CE72;}
-	.st1{fill:#88BA46;}
+	.tasaIZ{fill:#B6CE72;}
+	.tasaDR{fill:#88BA46;}
 	.st2{fill:#056A37;}
 	.st3{fill:#279346;}
 	.st4{fill:#FFDC8C;}
 	.st5{fill:#FECC8A;}
 	.st6{fill:#7C959C;}
 	.st7{fill:#DAE3EA;}
-	.st8{fill:#ABBED7;}
-	.st9{fill:#7F9FC3;}
+	.piramideIZ{fill:#ABBED7;}
+	.piramideDR{fill:#7F9FC3;}
 	.st10{fill:#FFFFFF;}
 	.st11{fill:#A5BE95;}
 	.st12{fill:#69A0CB;}
@@ -20,19 +20,19 @@
 <g id="Layer_1">
 	<g>
 		<g>
-			<circle class="st0" cx="28.8" cy="12.4" r="11.3"/>
+			<circle class="tasaIZ" cx="28.8" cy="12.4" r="11.3"/>
 		</g>
 		<g>
-			<path class="st1" d="M28.8,23.7c6.2,0,11.3-5.1,11.3-11.3S35,1.1,28.8,1.1V23.7z"/>
+			<path class="tasaDR" d="M28.8,23.7c6.2,0,11.3-5.1,11.3-11.3S35,1.1,28.8,1.1V23.7z"/>
 		</g>
 		<g>
-			<path class="st8" d="M49.6,41.4v-3.3c0-0.8-0.6-1.4-1.4-1.4h-4.1c-0.8,0-1.4-0.6-1.4-1.4v-5c0-0.8-0.6-1.4-1.4-1.4H16.5
+			<path class="piramideIZ" d="M49.6,41.4v-3.3c0-0.8-0.6-1.4-1.4-1.4h-4.1c-0.8,0-1.4-0.6-1.4-1.4v-5c0-0.8-0.6-1.4-1.4-1.4H16.5
 				c-0.8,0-1.4,0.6-1.4,1.4v5c0,0.8-0.6,1.4-1.4,1.4H9.4c-0.8,0-1.4,0.6-1.4,1.4v3.3c0,0.8-0.6,1.4-1.4,1.4h-4
 				c-0.8,0-1.4,0.6-1.4,1.4v11.2c0,0.8,0.6,1.4,1.4,1.4H55c0.8,0,1.4-0.6,1.4-1.4V44.3c0-0.8-0.6-1.4-1.4-1.4h-4
 				C50.3,42.8,49.6,42.2,49.6,41.4z"/>
 		</g>
 		<g>
-			<path class="st9" d="M28.8,56.9H55c0.8,0,1.4-0.6,1.4-1.4V44.3c0-0.8-0.6-1.4-1.4-1.4h-4c-0.8,0-1.4-0.6-1.4-1.4v-3.3
+			<path class="piramideDR" d="M28.8,56.9H55c0.8,0,1.4-0.6,1.4-1.4V44.3c0-0.8-0.6-1.4-1.4-1.4h-4c-0.8,0-1.4-0.6-1.4-1.4v-3.3
 				c0-0.8-0.6-1.4-1.4-1.4h-4.1c-0.8,0-1.4-0.6-1.4-1.4v-5c0-0.8-0.6-1.4-1.4-1.4H28.8V56.9z"/>
 		</g>
 	</g>
