@@ -1,0 +1,32 @@
+.main-condiciones{
+    display: grid;
+    grid-template-columns: auto;  
+    color: #000000;
+    height: auto;
+    margin-top: 123px;
+    width: 70%;
+    text-align: justify;
+}
+
+.title-condiciones{
+    display:grid;
+    grid-template-columns: 12% 50%;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.title-condiciones img {
+    width: 110px;
+}
+
+.main-condiciones h2 , .main-condiciones p{
+    margin: 10px 0;
+}
+
+.main-condiciones p {
+    font-size: 1.4rem;
+}
+
+.negrita{
+    font-weight: bold;
+}

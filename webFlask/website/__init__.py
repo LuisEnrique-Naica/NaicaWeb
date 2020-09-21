@@ -31,3 +31,7 @@ def paypal():
 @app.route("/educacion-financiera")
 def financiera():
     return render_template('educacion-financiera.html')
+
+@app.route("/condiciones")
+def condiciones():
+    return render_template('condiciones.html')
