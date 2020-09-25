@@ -1,0 +1,295 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-error{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    justify-self: center;
+}
+
+.girlC0{
+    fill:#FFA8A7;
+}
+
+.girlC1{
+    fill:#263238;
+}
+
+.girlC2{
+    fill:#455A64;
+}
+
+.girlC3{
+    fill:#37474F;
+}
+
+.girlC4{
+    fill:#066664;
+}
+
+.girlC5{
+    fill:#5C7AA4;
+}
+
+.girlC6{
+    fill:#F28F8F;
+}
+
+.girlC7{
+    fill:#7A9ED0;
+}
+
+.girlC8{
+    opacity:0.1;fill:#7A9ED0;enable-background:new    ;
+}
+
+.girlC9{
+    fill:#B16668;
+}
+
+.opacity2{
+    opacity:0.2;
+}
+
+.opacity6{
+    opacity:0.6;
+}
+
+
+.cls-1{
+    fill:#588fcd;
+}
+.cls-2{
+    fill:#fff;
+}
+
+#triangulo{
+    animation: bounceTriangulo 0.7s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#exclamacion{
+    animation: bounceExcl 1.6s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#signo_der{
+    animation: bounceSig 1s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box;   
+}
+
+#signo_medio{
+    animation: bounceSig 1.6s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box;   
+}
+
+#signo_izq{
+    animation: bounceSig 1.3s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box;   
+}
+
+#manitaI_M{
+    animation: ManitaM 2s infinite  ;
+    transform-origin: center;
+    transform-box: fill-box;   
+}
+
+
+/*  Boiiiiiii*/ 
+
+.boyC0{
+    fill:#B16668;
+}
+
+.boyC1{
+    fill:#263238;
+}
+
+.boyC2{
+    fill:#455A64;
+}
+
+.boyC3{
+    fill:#066664;
+}
+
+.boyC4{
+    fill:#37474F;
+}
+
+.boyC5{
+    fill:#9A4A4D;
+}
+
+.boyC6{
+    fill:#5C7AA4;
+}
+
+.boyC7{
+    fill:#7A9ED0;
+}
+
+.opacity2{
+    opacity:0.2;
+}
+
+.opacity6{
+    opacity:0.6;
+}
+
+.refresh{
+    fill:#0071e3; 
+}
+
+#text-error{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#comment-error{
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #0071e3; 
+}
+
+div.excla-error > p{
+    margin: 15px 0;
+}
+
+div.excla-error > a > svg#circle-refresh{
+    height: 20%;
+}
+
+
+h1{
+    font-weight: bold;
+}
+
+#manitaI_H{
+    animation: ManitaH 2s infinite  ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+/* Medias queries */
+
+@media only screen and (max-width: 768px){
+    .content-error{
+        width: 80%;
+        height: 100vh;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 58% 42%;
+    }
+
+    .excla-error{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .mujer{
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+    }
+
+    .hombre{
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+
+    div.excla-error > a > svg#circle-refresh{
+        height: 20%;
+    }
+}
+
+
+/* KeyFrames */
+
+
+@keyframes ManitaH{
+    0%{
+        transform: scaleX(1) rotateZ(0deg);
+    }
+    50%{
+        transform: scaleX(1.05) rotateZ(5deg);
+    }
+    100%{
+        transform: scaleX(1) rotateZ(0deg);
+    }
+}
+ 
+@keyframes ManitaM{
+    0%{
+        transform: scaleX(1) rotateZ(0deg);
+    }
+    50%{
+        transform: scaleX(1.05) rotateZ(-10deg);
+    }
+    100%{
+        transform: scaleX(1) rotateZ(0deg);
+    }
+}
+
+
+
+@keyframes bounceSig {
+    0%{
+        transform: scale3d(0, 0 ,0);
+    }
+    50%{
+        transform: scale3d(0, 0 ,0);
+    }
+    70%{
+        transform: scale3d(1.15,1.15,1.15);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+
+
+@keyframes bounceTriangulo {
+    0%{
+        transform: translateX(40px) scale3d(0, 0 ,0);
+    }
+    70%{
+        transform: translateX(40px) scale3d(1.3,1.3,1.3);
+    }
+    100%{
+        transform: translateX(40px) scale3d(1,1,1);
+    }
+}
+
+
+
+@keyframes bounceExcl {
+    0%{
+        transform: translateX(40px) scale3d(0, 0 ,0);
+    }
+    50%{
+        transform: translateX(40px) scale3d(0, 0 ,0);
+    }
+    70%{
+        transform: translateX(40px) scale3d(1.2,1.2,1.2);
+    }
+    100%{
+        transform: translateX(40px) scale3d(1,1,1);
+    }
+}

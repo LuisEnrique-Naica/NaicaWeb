@@ -35,3 +35,8 @@ def financiera():
 @app.route("/condiciones")
 def condiciones():
     return render_template('condiciones.html')
+
+
+@app.route("/error403")
+def error403():
+    return render_template('error403.html')
