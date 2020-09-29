@@ -1,0 +1,417 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  
+     body {
+        background: rgb(204,204,204); 
+        font-family: 'Lato', sans-serif;
+    }
+    page {
+        background: white;
+        display: block;
+        margin: auto;
+        padding: 1.5cm 1.3cm;
+        margin-bottom: 0.5cm;
+        box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    }
+    page[size="A4"] {  
+        width: 21cm;
+        height: 29.7cm; 
+    }
+    page[size="A4"][layout="landscape"] {
+        width: 29.7cm;
+        height: 21cm;  
+    }
+  
+    #logo-content{
+        border: 0.15cm solid black;
+        height: 92%;
+        display: grid;
+        grid-template-rows: 18% 42% 12% 12% 16%;
+        border-bottom:none;
+    }
+
+    #logo-naica{
+        display: grid;
+    }
+
+    #logo-naica img{
+        height: 3cm;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #content-data{
+        display: grid;
+        height: auto;
+        grid-template-columns: 69.8% 0.2% 30%;
+    }
+
+    #content-general{
+        display: grid;
+        height: auto;
+        grid-template-rows: 7% 93%;
+    }
+
+    .separator{
+        background-color: #aaaaaa;
+    }
+    
+    #title{
+        color: white;
+        background-color: black;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #title h1{
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 0.33cm;
+    }
+
+    #info-data{
+        display: grid;
+        padding: 0.15cm;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    .negrita-data{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.33cm;
+    }
+
+    #division{
+        display: grid;
+        grid-template-columns: 45% 65%;
+    }
+
+    #division-big{
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+
+    #data-info{
+        display: grid;
+        grid-template-rows: 28% 12% 12% 12% 12% 12% 12% ;
+    }
+
+    #title-gen{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title-gen h1 {
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 0.33cm;
+    }
+
+    .subinfo-contrato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 0.33cm;
+    }
+
+    #producto{
+        display: grid;
+        grid-template-rows: 30% 70%;
+    }
+
+    #producto-data{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;        
+    }
+
+    #producto-data div{
+        display:flex;
+        justify-content: center;
+        border: 1px solid #aaaaaa;
+    }
+
+    #producto-data p, #admin p, #beneficiarios p{
+        align-self: center;
+        justify-self: center;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 0.33cm;
+    }
+
+    #admin-data{
+        display: grid;
+        grid-template-rows: 30% 70%;
+    }
+
+    #admin{
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-template-rows: 50% 50%;        
+    }
+
+    #admin div{
+        display:flex;
+        justify-content: center;
+        border: 1px solid #aaaaaa;
+    }
+
+    #beneficiarios{
+        display: grid;
+        grid-template-rows: 25% 75%;
+    }
+
+    #beneficiarios-data{
+        display: grid;
+        grid-template-columns: 65% 25% 10%;
+        grid-template-rows: 25% 25% 25% 25%; 
+    }
+
+    #beneficiarios-data div{
+        display:flex;
+        justify-content: center;
+        border: 1px solid #aaaaaa;
+    }
+
+    /* page 2 */
+
+    #infopage2{
+        height: 92%;
+        display: grid;
+        grid-template-rows: 8% 42% 13% 37%;
+    }
+
+    #infopage2 > #logo-naica > img {
+        height: 1.8cm; 
+    }
+    
+    #firmas{
+        border: 0.15cm solid black;
+        border-top:0.07cm solid #eeeeee;
+        display: grid;
+        grid-template-rows: 28% 7% 21% 7% 37%;
+    }
+
+    div#firmas > p {
+        font-size: 0.33cm;
+        padding: 0.2cm;
+        text-align: justify;
+        font-weight: bold; 
+    }
+
+    div#firmas div#title, #cliente-data-info div#title{
+        justify-content: left;
+        padding-left: 0.2cm;
+    }
+
+    #double-firmas{
+        display: grid;
+        grid-template-columns: 49.8% 0.2% 50%;
+    }
+
+    #name-firma{
+        display: grid;
+        grid-template-rows: 75% 25%;
+    }
+
+    .text-firma{
+        font-size: 0.33cm;
+        text-align: center;
+        font-weight: bold; 
+    }
+    
+    .datos-clientes{
+        display: grid;
+        grid-template-rows: 15% 15% 70%;
+    }
+
+    #info-cliente{
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+
+    #info-cliente p, .datos-clientes p{
+        font-size: 0.33cm;
+        text-align: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #doble-title{
+        display:grid;
+        grid-template-columns: 55% 45%;
+    }
+
+    #cliente-data-info{
+        display:grid;
+        grid-template-rows: repeat(8, 12.5%) ;
+        grid-template-columns: 48% 24% 28%;
+    }
+
+    div#cliente-data-info div.lighter {
+        display:flex;
+        align-items: center;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    div#cliente-data-info div.lighter p{
+        font-size: 0.33cm;
+        text-align: left;
+        font-weight: lighter;
+        text-transform: uppercase;
+        padding-left: 0.2cm;
+        
+    }
+
+    #cliente-data-info div{
+        border: 0.01cm solid #5f5f5f;
+    }
+
+    /* page 3 */
+
+    #infopage3{
+        height: 92%;
+        display: grid;
+        grid-template-rows: 8% 57% 10% 25% ;
+    }
+
+    #infopage3 > #logo-naica > img {
+        height: 1.8cm; 
+    }
+
+    .declaraciones h2 {
+        font-size: 0.34cm;
+        text-align: justify;
+    }
+
+    .title-declaraciones {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 0.34cm;
+        text-align: center;
+        margin: 0.5cm 0;
+    }
+
+    .declara{
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 0.34cm;
+        margin: 0.5cm 0;
+    }
+
+    .romanos{
+        margin: 0 0.5cm 0 0;
+    }
+
+    .subindices{
+        display: grid;
+        grid-template-columns: 8% 92%;
+        grid-template-rows: auto;
+        text-align: justify;
+        font-size: 0.34cm;
+        row-gap: 0.1cm;
+    }
+
+    .letras{
+        justify-self: center;       
+    } 
+
+    .clausulas {
+        font-size: 0.34cm;
+    }
+
+    .justify {
+        text-align: justify;
+        margin: 0.4cm 0;        
+    }
+    .negrita{
+        font-weight: bold;
+    }
+
+    /* page 4 */
+
+    #infopage4{
+        height: 92%;
+        display: grid;
+        grid-template-rows: 8% 92% ;
+        font-size: 0.34cm;
+    }
+
+    #infopage4 > #logo-naica > img {
+        height: 1.8cm; 
+    }
+    /* page 5 */
+
+    #infopage5{
+        height: 92%;
+        display: grid;
+        grid-template-rows: 8% 92% ;
+        font-size: 0.34cm;
+    }
+
+    #infopage5 > #logo-naica > img {
+        height: 1.8cm; 
+    }
+
+    #double-pag8{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 6cm;
+    }
+
+    .beneficiarios-datos{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: auto;
+        row-gap: 0.5cm;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+    }
+
+    .declara-registro{
+        margin-left: 1cm;
+        font-weight: bold;
+    }
+
+    .table-beneficiario{
+        display: grid;
+        margin: 0.2cm 0;
+        height: 4cm;
+        font-size: 0.33cm;
+        grid-template-columns: 55% 15% 15% 15%;
+        grid-template-rows: 30% 30%;
+    }
+
+    .table-beneficiario div#title{
+        border: 0.01cm solid #5f5f5f;
+        
+    }
+
+    .table-beneficiario div, .table-beneficiario-correo div{
+        border: 0.01cm solid #5f5f5f;
+        display: flex;
+        justify-content:center;
+        align-items:center; 
+    }
+
+    .table-beneficiario-correo{
+        display: grid;
+        margin: 0.2cm 0;
+        height: 4cm;
+        font-size: 0.33cm;
+        grid-template-columns:100%;
+        grid-template-rows: 30% 30%;
+    }
