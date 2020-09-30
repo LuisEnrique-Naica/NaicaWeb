@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style type="text/css">
+	.color0{fill:#B6CE72;}
+    .color1{fill:#88BA43;}
+    
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contenedor{
+        width: 50%;
+        height: auto;
+    }
+
+    #all{
+        stroke: #000000;
+        fill: transparent;
+        stroke-width: 0.5%;
+        stroke-dasharray: 420;
+        /* stroke-dashoffset: 200;  */
+        animation: fill 2s ease-in-out forwards;
+    }
+
+    #color-fondo{
+        animation: opacity 1.5s ease-in-out forwards;
+      }
+      
+    #flecha_baja{
+        transform-origin: center;
+       animation: rotation 2.5s ease-in-out forwards;
+    }
+    #flecha-alta{
+        transform-origin: center;
+         animation: rotation 2.5s ease-in-out forwards;
+    }
+
+
+
+
+    /* keyframes */
+
+
+    @keyframes rotation {
+        0%{
+          transform: rotate(0deg);
+        }
+        50%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(-360deg);
+        }
+    }
+
+    @keyframes fill {
+        0%{
+          stroke-dashoffset: 420;
+        }
+        30%{
+          fill: transparent;
+        }
+        100%{
+          stroke-dashoffset: 0;
+          fill: #000000;
+        }
+    }
+    @keyframes opacity {
+        0%{
+            opacity: 0;
+        }
+        35%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        
+    }
+}
+
+</style>
+<body>
+  <div id="contenedor">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 79.7" style="enable-background:new 0 0 80 79.7;" xml:space="preserve">
+<g id="color-fondo">
+	<g id="Layer_1-2">
+		<g id="Group_917">
+			<circle id="Ellipse_83" class="color0" cx="38.7" cy="39.1" r="21.1"/>
+			<g id="Group_916">
+				<path id="Path_1464" class="color1" d="M39,17.8C27.2,17.6,17.5,27,17.3,38.7c-0.2,11.8,9.1,21.5,20.9,21.7c0.3,0,0.6,0,0.9,0
+					c0,0-10.2-9.7-10.3-21.3C28.8,26.8,39,17.8,39,17.8z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="all">
+	<g id="Layer_2_1_">
+		<g id="Group_918">
+			<path id="dollar" d="M40.1,42.4c0,0.7-0.7,1-1.6,1c-1.6-0.1-3.1-0.6-4.5-1.4l-1.4,2.8c1.4,0.8,2.9,1.4,4.5,1.5l0,2.8l2.6,0
+				l0-2.9c2.4-0.5,4-1.9,4-4c0-4.9-7.4-3.4-7.5-5.9c0-0.9,0.7-1.2,1.7-1.2c1.8,0.1,3.6,0.9,5,2.1l1.4-2.8c-1.4-1.1-3.1-1.8-4.9-2.1
+				l0-3.1l-2.6,0l0,2.9c-2.6,0.3-4.5,1.7-4.5,4.2C32.8,41.5,40.1,40.1,40.1,42.4z"/>
+			<path id="flecha_baja" d="M29.3,71.3c-0.2,0.2-0.4,0.2-0.4,0.3c-0.5,0.6-1.1,1.2-1.7,1.7c-1.4,1.4,0.7,3.3,2.1,2.1
+				c1.4-1.4,4-3.3,4-5.4s-2.6-4-4-5.2c-0.5-0.6-1.3-0.6-1.9-0.1c-0.5,0.5-0.6,1.3-0.2,1.8c0.1,0.1,0.1,0.1,0.2,0.2l1.6,1.6l0,0
+				c-12.5-1.6-21.8-12.1-22-24.7c0-0.8-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5C4.2,58,15,69.8,29.3,71.3z"/>
+			<path id="flecha-alta" d="M50.5,15c1.4,1.4,3.3-0.7,2.1-2.1L51,11.4l0,0C63.5,13,72.9,23.5,73.1,36.1c0.1,0.8,0.8,1.4,1.6,1.4
+				c0.7-0.1,1.3-0.6,1.4-1.4C75.8,21.7,64.8,9.8,50.5,8.4c0.2-0.2,0.3-0.2,0.3-0.3c0.5-0.6,1.1-1.2,1.7-1.7C54,5,51.9,3.1,50.5,4.3
+				c-1.4,1.4-4,3.3-4,5.4C46.6,11.9,49.2,13.6,50.5,15z"/>
+			<path id="Path_1468" d="M38.7,62.3c12.7,0,23-10.4,23-23.1c0-12.7-10.4-23-23.1-23s-23,10.4-23,23.1c0,0,0,0,0,0
+				C15.7,52,26,62.3,38.7,62.3z M38.6,19.9c10.7-0.1,19.4,8.5,19.4,19.2c0.1,10.7-8.5,19.4-19.2,19.4C28.3,58.6,19.6,50,19.5,39.3
+				l0,0C19.4,28.7,28,20,38.6,19.9L38.6,19.9z"/>
+		</g>
+	</g>
+</g>
+</svg>
+  </div>
+</body>
+</html>
