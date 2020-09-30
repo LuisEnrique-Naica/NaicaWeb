@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plantitaC0{
+    fill:#007849;
+}
+.plantitaC1{
+    fill:#009760;
+}
+.plantitaC2{
+    fill:#B5D0D7;
+}
+.plantitaC3{
+    fill:#689ED2;
+}
+.plantitaC4{
+    fill:#4B7BA6;
+}
+.plantitaC5{
+    /* fill:#006664; */
+    animation: opacityMaceta 1.5s ease-in-out forwards;  
+}
+.plantitaC6{
+    fill:#F1B307;
+}
+.plantitaC7{
+    fill:#505050;
+}
+.plantitaC8{
+    fill:#946000;
+}
+
+#contenedor{
+    width: 50%;
+    height: auto;
+}
+
+#maceta{
+    stroke: #006664;
+    fill: transparent;
+    stroke-width: 0.5%;
+     stroke-dasharray: 500;
+    /* stroke-dashoffset: 200;  */
+    animation: fillMaceta 1s ease-in-out forwards;
+}
+
+#jarra{
+    transform-origin: center;
+    animation: moveJarra 1.5s ease-in-out forwards;
+}
+
+#gota_medio{
+    transform-origin: left;
+    transform-box: fill-box;
+    animation: scaleGotas 1.8s ease-in-out forwards;
+}
+#gota_izq{
+    transform-origin: left;
+    transform-box: fill-box;
+    animation: scaleGotas 2s ease-in-out forwards;
+}
+#gota_der{
+    transform-origin: left;
+    transform-box: fill-box;
+    animation: scaleGotas 2.1s ease-in-out forwards;
+}
+
+#tallo{
+    transform-origin: bottom;
+    animation: tallogrow 2.5s ease-in-out forwards;
+}
+
+#hoja{
+    transform-origin: bottom;
+    transform-box: fill-box;
+    animation: bounce 3.5s ease-in-out forwards;
+}
+
+#moneda{
+    transform-origin: bottom;
+    transform-box: fill-box;
+    animation: bounce 3.8s ease-in-out forwards;
+}
+
+@keyframes fillMaceta {
+    0%{
+        stroke-dashoffset: 500;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes opacityMaceta {
+    from{
+        fill: rgb(255, 255, 255);
+    }
+    to{
+        fill: #006664;
+    }
+}
+
+@keyframes moveJarra {
+    0%{
+       transform: translate3d(-19px,39px, 0px) rotate3d(1, 1, -9, 48deg);
+    }
+    
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+@keyframes scaleGotas{
+    0%{
+        transform: scale(0,0) ;
+    }
+    50%{
+        transform: scale(0,0) ;
+    }
+    100%{
+        transform: scale(1,1) ;
+    }
+}
+
+@keyframes tallogrow{
+    0%{
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    50%{
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale3d(0,0,0);
+    }
+    70%{
+        transform: scale3d(0,0,0);
+    }
+    85%{
+        transform: scale3d(1.12,1.12,1.12);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
