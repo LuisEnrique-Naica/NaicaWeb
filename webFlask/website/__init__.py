@@ -40,3 +40,8 @@ def condiciones():
 @app.route("/error403")
 def error403():
     return render_template('error403.html')
+
+
+@app.route("/error405")
+def error405():
+    return render_template('error405.html')
