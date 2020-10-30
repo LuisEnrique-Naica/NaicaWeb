@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    margin:  0 auto;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 50% 50%;
+}
+
+.contenedor svg {
+    align-self: center;
+    justify-self: center;
+    height: 70%;
+}
+
+
+/*  colores svg  */
+
+.lapcandColor0{fill:#E4EDF2;stroke:#515151;stroke-width:5;stroke-miterlimit:10;}
+.lapcandColor1{fill:#515151;}
+.lapcandColor2{fill:#FFFFFF;}
+.lapcandColor3{fill:#A7A7A7;}
+.lapcandColor4{fill:#2D2C2C;}
+.lapcandColor5{fill:#515151;stroke:#515151;stroke-width:5;stroke-miterlimit:10;}
+.lapcandColor6{fill:none;stroke:#9CCC9C;stroke-width:6;stroke-miterlimit:10;}
+
+
+/* candado */
+
+.candadoC0{fill:#A7A7A7;}
+.candadoC1{fill:#2D2C2C;}
+.candadoC2{fill:#515151;stroke:#515151;stroke-width:5;stroke-miterlimit:10;}
+.candadoC3{fill:none;stroke:#9CCC9C;stroke-width:6;stroke-miterlimit:10;}
+
+/* mano */
+
+.manoColor0{fill:#EDB008;}
+.manoColor1{fill:#F1D48E;}
+.manoColor2{fill:#588FCD;}
+
+/*  caja verde */  
+
+.cajaVColor0{fill:#2D2C2C;}
+.cajaVColor1{fill:#515151;}
+.cajaVColor2{fill:#6DC443;}
+.cajaVColor3{fill:none;stroke:#2D2C2C;stroke-width:9;stroke-miterlimit:10;}
+.cajaVColor4{fill:#F2F2F2;}
+.cajaVColorblack{fill: black;}
+
+
+/* caja amarilla */
+
+.cajaAColor0{fill:#2D2C2C;}
+.cajaAColor1{fill:#515151;}
+.cajaAColor2{fill:#EDB008;}
+.cajaAColor3{fill:none;stroke:#2D2C2C;stroke-width:9;stroke-miterlimit:10;}
+.cajaAColor4{fill:#F2F2F2;}
+
+/* caja rojo */
+
+.cajaRcolor0{fill:#2D2C2C;}
+.cajaRcolor1{fill:#515151;}
+.cajaRcolor2{fill:#F2F2F2;}
+.cajaRcolor3{fill:#FF4040;}
+.cajaRcolor4{fill:#292828;}
+
+
+
+/* KEYFRAMES */
+
+#all-pantalla{
+    animation: bounce-lap .6s ease forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#fondo{
+    animation: bounce-lap .6s ease forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#metal{
+    animation: move-metal 3.5s ease-in-out forwards;
+}
+
+#candado-lap{
+    animation: move-canlap 1.6s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#solo-metal{
+    animation: move-metal-solo 1.5s ease-in-out forwards;
+}
+
+#estrella{
+    animation: bounce-star 1.6s ease forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#manita{
+   animation: move-hand 1s ease forwards;
+   transform-origin: left bottom;
+   transform-box: fill-box; 
+}
+
+#cerrojo{
+    animation: rotate-bolt 3s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box; 
+}
+
+#closed-door{
+    animation: move-door 1.5s ease-in-out forwards;
+    transform-origin:  center right;
+    transform-box: fill-box; 
+}
+
+#escudito{
+    animation: bounce-shield 3.9s ease forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#escudo-error{
+    animation: bounce-star 2s ease forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#cerrojo-error{
+    animation: rotate-bolt-error 1s ease-in-out forwards;
+    transform-origin: center;
+    transform-box: fill-box; 
+}
+
+@keyframes rotate-bolt-error {
+    0%{
+        transform: rotate(360deg) ;
+    }
+    10%{
+        transform: rotate(360deg) ;
+    }
+    90%{
+        transform: rotate(-9deg) ;
+    }
+    95%{
+        transform: rotate(14deg) ;
+    }
+    
+}
+
+
+@keyframes bounce-shield {
+    0%{
+        transform: scale(0);
+    }
+    60%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce-star {
+    0%{
+        transform: scale(0);
+    }
+    40%{
+        transform: scale(0);
+    }
+
+    75%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce-lap{
+    0%{
+        transform: scale(0);
+    }
+    75%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes move-metal{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    85%{
+        transform: translateY(45px);
+    }
+    95%{
+    transform: translateY(49px);
+    }
+    100%{
+        transform: translateY(45px);
+    }
+}
+
+
+@keyframes move-metal-solo{
+    0%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(85px);
+    }
+    90%{
+    transform: translateY(89px);
+    }
+    100%{
+        transform: translateY(85px);
+    }
+}
+
+
+@keyframes move-canlap{
+    0%{
+        transform: translate(465.3px,-20px)  rotate(-45deg);
+    }
+    30%{
+        transform: translate(465.3px,-20px) rotate(-45deg);
+    }
+
+    90%{
+        transform: translate(0px,-20px) rotate(8deg);
+    }
+    95%{
+        transform: translate(0px,-20px) rotate(4deg);
+    }
+    100%{
+        transform: translate(0px,-20px) rotate(0deg);
+    }
+}
+
+
+@keyframes move-hand {
+    0%{
+        transform: rotate(0deg) ;
+    }
+    33%{
+        transform: rotate(-9deg) ;
+    }
+    66%{
+        transform: rotate(9deg) ;
+    }
+    100%{
+        transform: rotate(0deg) ;
+    }
+}
+
+@keyframes rotate-bolt {
+    0%{
+        transform: rotate(360deg) ;
+    }
+    50%{
+        transform: rotate(360deg) ;
+    }
+    100%{
+        transform: rotate(0deg) ;
+    }
+}
+
+@keyframes move-door {
+    0%{
+        transform: rotate3d(-1, 51, 0, 60deg) scale(0.8,1.1);
+    }
+    100%{
+        transform: rotate3d(-1, 51, 0, 0deg) scale(1,1);
+    }
+}
