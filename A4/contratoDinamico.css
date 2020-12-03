@@ -1,0 +1,251 @@
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: rgb(204,204,204); 
+      font-family: 'Times New Roman', sans-serif;
+    }
+    page {
+      background: white;
+      display: block;
+      margin: auto;
+      padding: 1.5cm 1.5cm;
+      margin-bottom: 0.5cm;
+      margin-top: 0.5cm;
+      box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    }
+    page[size="A4"] {  
+      width: 21cm;
+      height: 29.7cm; 
+    }
+    page[size="A4"][layout="landscape"] {
+      width: 29.7cm;
+      height: 21cm;  
+    }
+    
+    #content p{
+        padding: 0.2cm;
+		font-weight: bold;
+		text-align: justify; 
+    }
+    #intro{
+        width: 75%;
+        margin: auto auto;
+		display: grid;
+		height: 100%;
+        grid-template-rows: 30% 5% 5% 5% 5% 5% 5% 25%;
+    }
+    #intro p{
+        text-align: center;
+        align-self: center;
+        font-weight: bold;
+    }
+    #declaraciones{
+		text-align: center!important;
+		font-weight: bold;
+    }
+
+    #content p#title{
+        text-align: justify;
+        font-weight: bold;   
+        letter-spacing: 0.01cm; 
+    }
+    p#clausula::before{
+       content: attr(number); 
+	   margin-right: 1.1cm;
+	   font-weight: bold;
+	}
+	p#sub-clausula::before{
+		content: attr(sub-number); 
+		margin-right: 0.5cm;
+		font-weight: bold;
+		text-decoration: none!important;
+	 }
+    #one-decla{
+		width: 90%;
+		margin-left: auto;
+	}
+	#one-decla p{
+		font-weight: normal;
+		padding: 0.4cm;
+		text-align: justify;
+	}
+
+	page#page::after{
+		content: attr(page);
+		margin: 0 9cm;
+		font-weight: bold;
+	}
+	.sub{
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+	.sub2{
+		font-weight: bold;
+		text-transform: capitalize;
+		text-decoration: underline;
+	}
+
+	.open-title{
+		margin: 0.4cm;
+	}
+	.space{
+		margin: .53cm 0;
+		text-align: justify;
+	}
+	.space2{
+		margin: .7cm 0;
+		text-align: justify;
+	}
+	.table{
+		display: grid;
+		grid-template-rows: auto;
+		width: 100%;
+		margin-bottom: 0.1cm;
+	}
+	.division-table{
+		display: grid;
+		grid-template-columns: 40% 60%;
+		border: 0.05cm black solid;
+		
+	}
+	.first{
+		background-color: #002060;
+	}
+	.td-division{
+		border-right: 0.05cm black solid;
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+	.division-table p{
+		padding: 0cm 0.3cm;
+	}
+	div.first div.td-division{
+		justify-content: center;
+		text-align: center;
+	}
+
+	.first p{
+		justify-self: center;
+		color: white;
+		padding: 0.07cm 0;
+		font-weight: bold;
+	}
+
+	#one-decla2 p{
+		font-weight: normal;
+		padding:  0.1cm;
+		text-align: justify;
+	}
+	#one-decla2{
+		width: 90%;
+		margin-left: auto;
+	}
+
+
+	#one-decla3 p{
+		font-weight: normal;
+		text-align: justify;
+	}
+	#one-decla3{
+		width: 90%;
+		margin-left: auto;
+	}
+	.table-seven{
+		display: grid;
+		width: 85%;
+		margin: auto;
+		height: 4.5cm;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		margin-bottom: 0.2cm;
+	}
+
+	.table-seven div {
+		border: 0.05cm rgb(75, 75, 75) solid;
+		padding: 0 0.2cm;
+	}
+
+	.negrita{
+		font-weight: bold;
+	}
+
+	.table-seven-cont{
+		display: grid;
+		width: 85%;
+		margin: auto;
+		height: 2cm;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto;
+		margin-bottom: 0.2cm;
+	}
+
+	.table-seven-cont div {
+		border: 0.05cm rgb(75, 75, 75) solid;
+		padding: 0 0.2cm;
+	}
+
+	.rest{
+		width: 70%;
+		margin: auto;
+	}
+	.rest p{
+		text-align: center;
+	}
+
+	.blank{
+		height: 12cm;
+	}
+
+	.firmas{
+		display: grid;
+		width: 55%;
+		margin: auto;
+		height: 10cm;
+		grid-template-rows: 50% 50%;
+		margin-bottom: 0.2cm;
+	}
+	
+	.firmas div {
+		border: 0.05cm rgb(75, 75, 75) solid;
+		padding: 0 0.2cm;
+	}
+
+	.firmas div p{
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.one{
+		display: grid;
+		grid-template-rows: 10% 10% 80%;
+		height: 100%;
+	}
+	
+	.two{
+		display: grid;
+		grid-template-rows: 10% 10% 80%;
+		height: 100%;
+	}
+
+	.two div{
+		border: none;
+		padding-top: 0.9cm;
+	}
+
+	.two div p{
+		text-align: start;
+	}
+
+	.one p:nth-child(3){
+		align-self: flex-end;
+		text-align: start;
+		margin-bottom: .8cm;
+	}
+	.normal{
+		font-weight: normal;
+	}
