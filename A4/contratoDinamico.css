@@ -54,22 +54,22 @@
     }
     p#clausula::before{
        content: attr(number); 
-	   margin-right: 1.1cm;
+	   margin-right: 0cm;
 	   font-weight: bold;
 	}
 	p#sub-clausula::before{
 		content: attr(sub-number); 
-		margin-right: 0.5cm;
+		margin-right: 0.05cm;
 		font-weight: bold;
 		text-decoration: none!important;
 	 }
     #one-decla{
-		width: 90%;
+		width: 95%;
 		margin-left: auto;
 	}
 	#one-decla p{
 		font-weight: normal;
-		padding: 0.4cm;
+		padding: 0.3cm;
 		text-align: justify;
 	}
 
@@ -81,12 +81,10 @@
 	.sub{
 		font-weight: bold;
 		text-transform: uppercase;
-		text-decoration: underline;
 	}
 	.sub2{
 		font-weight: bold;
 		text-transform: capitalize;
-		text-decoration: underline;
 	}
 
 	.open-title{
@@ -110,27 +108,59 @@
 		display: grid;
 		grid-template-columns: 40% 60%;
 		border: 0.05cm black solid;
+		border-top-width: 0cm;
+		border-bottom-width: 0cm;
 		
 	}
 	.first{
-		background-color: #002060;
+		/* background-color: rgb(43, 43, 43); */
+		display: grid;
+		grid-gap: 0.3cm;
+		grid-template-columns: 39% 59.5%;
+		border-top-width: 0cm;
+		border-bottom-width: 0cm;
+		margin: 0.2cm 0;
 	}
 	.td-division{
 		border-right: 0.05cm black solid;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		width: 100%;
 	}
 	.division-table p{
-		padding: 0cm 0.3cm;
+		padding: 0.2cm 0.3cm;
 	}
+
+	div.division-table:nth-child(2){
+		border-top-width: 0.05cm;
+	}
+
+	.division-table:nth-child(even){
+		background-color:rgb(228, 228, 228)
+	}
+
+	.division-table:last-child{
+		border-bottom-width: 0.05cm;
+	}
+
 	div.first div.td-division{
 		justify-content: center;
 		text-align: center;
+		padding: 0.2cm 0 ;
+		background-color: rgb(43, 43, 43);
+	}
+	
+	.black{
+		background-color: rgb(43, 43, 43);
+		display: flex;
+		justify-content:center;
+		align-items:center;
 	}
 
 	.first p{
 		justify-self: center;
+		align-self: center;
 		color: white;
 		padding: 0.07cm 0;
 		font-weight: bold;
@@ -142,7 +172,7 @@
 		text-align: justify;
 	}
 	#one-decla2{
-		width: 90%;
+		width: 95%;
 		margin-left: auto;
 	}
 
@@ -152,21 +182,20 @@
 		text-align: justify;
 	}
 	#one-decla3{
-		width: 90%;
+		width: 100%;
 		margin-left: auto;
 	}
 	.table-seven{
 		display: grid;
-		width: 85%;
+		width: 100%;
 		margin: auto;
-		height: 4.5cm;
-		grid-template-columns: 50% 50%;
+		height: 7cm;
+		grid-template-columns: 25% 75%;
 		grid-template-rows: 50% 50%;
 		margin-bottom: 0.2cm;
 	}
 
 	.table-seven div {
-		border: 0.05cm rgb(75, 75, 75) solid;
 		padding: 0 0.2cm;
 	}
 
@@ -211,19 +240,22 @@
 	}
 	
 	.firmas div {
-		border: 0.05cm rgb(75, 75, 75) solid;
 		padding: 0 0.2cm;
 	}
 
 	.firmas div p{
 		text-align: center;
-		font-weight: bold;
 	}
 
 	.one{
 		display: grid;
-		grid-template-rows: 10% 10% 80%;
+		grid-template-rows: 20% 80%;
 		height: 100%;
+	}
+
+	.one p {
+		justify-self: center;
+		align-self: center;
 	}
 	
 	.two{
@@ -235,6 +267,10 @@
 	.two div{
 		border: none;
 		padding-top: 0.9cm;
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items: center;
 	}
 
 	.two div p{
