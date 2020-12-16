@@ -35,8 +35,23 @@
         margin: auto auto;
 		display: grid;
 		height: 100%;
-        grid-template-rows: 30% 5% 5% 5% 5% 5% 5% 25%;
-    }
+        grid-template-rows: 15% 10% 3% 6% 5% 5% 5% 26% 25%;
+	}
+
+	#intro img{
+		height: 50%;
+		align-self: center;
+		justify-self: center;
+	}
+	
+	#intro p:nth-child(1){
+		align-self: end;
+	}
+
+	#intro p:nth-child(2){
+		align-self: center;
+	}
+
     #intro p{
         text-align: center;
         align-self: center;
