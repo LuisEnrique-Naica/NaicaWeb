@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Date Picker</title>
+
+	<link rel="stylesheet" href="main.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+	
+</head>
+<body>
+	<h1>Components</h1>
+<section class="content">
+
+	<div class="date-picker">
+		<div class="selected-date">
+			<span class="text-selected-date">Fecha de pago </span>
+			<svg id="Grupo_4" data-name="Grupo 4" xmlns="http://www.w3.org/2000/svg" width="46.794" height="48" viewBox="0 0 46.794 48">
+			<path id="Trazado_256" data-name="Trazado 256" d="M59.96,6.474H52.123V3.46H50.767V6.474H30.119V3.46H28.761V6.474H19.945a3.392,3.392,0,0,0-3.389,3.389V48.069a3.394,3.394,0,0,0,3.389,3.391H59.959a3.4,3.4,0,0,0,3.392-3.391V9.866A3.393,3.393,0,0,0,59.96,6.474ZM19.947,7.829h8.815v2.562H30.12V7.829H50.767v2.562h1.356V7.829h7.837A2.037,2.037,0,0,1,62,9.863V15.5H17.914V9.866a2.036,2.036,0,0,1,2.033-2.037ZM59.96,50.1H19.947a2.036,2.036,0,0,1-2.033-2.035V16.85H62V48.069A2.038,2.038,0,0,1,59.96,50.1Z" transform="translate(-16.556 -3.46)" fill="#0071e3"/>
+			<rect id="Rectángulo_175" data-name="Rectángulo 175" width="13.399" height="1.356" transform="translate(17.257 28.107)" fill="#0071e3"/>
+			</svg>
+			</div>
+
+		<div class="dates">
+			<div class="month">
+				<div class="arrows prev-mth">&lt;</div>
+				<div class="mth"></div>
+				<div class="arrows next-mth">&gt;</div>
+			</div>
+			<div class="week">
+				<p>do.</p>
+				<p>lu.</p>
+				<p>ma.</p>
+				<p>mi.</p>
+				<p>ju.</p>
+				<p>vi.</p>
+				<p>sa.</p>
+			</div>
+			<div class="days"></div>
+		</div>
+	</div>
+
+
+	<select-component 
+	newid="identificador"
+	newtitle="Select Component" 
+	option='{ 
+		"option1": { "label": "Option 1", "value":"1" },
+		"option2": { "label": "Option 2" ,"value":"2"} 
+	}'
+	></select-component>
+
+	<button-page
+	content="Siguiente"
+	toUrl="http://www.facebook.com/"
+	></button-page>
+
+	<link-page
+	content="Volver"
+	toUrl="http://www.facebook.com/"
+	></link-page>
+
+	<link-footer
+	content="Volver"
+	toUrl="http://www.facebook.com/"
+	></link-footer>
+
+	
+	<button-component
+	btntype="whatsapp"
+	></button-component>
+
+	<button-portafolio
+	btntype="aportacion"
+	></button-portafolio>
+
+	<button-help
+	btntpye="help"
+	></button-help>
+
+	
+
+</section>
+<div class="to-faqs">
+	<button-faqs
+	newcontext="¿Cómo contrato un MoneyBox?"
+	subcontext="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+	></button-faqs>
+
+	<button-case
+	
+	></button-case>
+</div>
+
+	<script src="main.js"></script>
+	<!-- Componentes -->
+	<script src="components/select.js"></script>
+	<script src="components/button.js"></script>
+	<script src="components/link.js"></script>
+	<script src="components/link-footer.js"></script>
+	<script src="components/button-contact.js"></script>
+	<script src="components/button-portafolio.js"></script>
+	<script src="components/button-faqs.js"></script>
+	<script src="components/button-help.js"></script>
+	<script src="components/button-case.js"></script>
+
+	<script>
+		
+		//poder seleccionar dentro del shadowDom
+		// console.log(document.querySelector('select-component').shadowRoot.querySelector('#prueba'))
+
+		//otra manera de genera los datos
+		// document.querySelector('select-component').options = {
+		// 	option1: { label: 'Option 1' },
+		// 	option2: { label: 'Option 2' },
+		// };
+	</script>
+</body>
+</html>

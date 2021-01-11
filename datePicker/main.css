@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	height: 170%;
+}
+
+h1 {
+	margin: 30px 0px;
+	color: #272727;
+	font-size: 42px;
+	font-weight: 900;
+	text-align: center;
+}
+
+h1 span {
+	font-weight: 300;
+	
+}
+
+.content{
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+  	grid-template-rows: repeat(2,1fr) ;
+	grid-gap: 50px;
+	margin: 0 auto;
+	width: 90%;
+	height: 100%;
+	align-items: center;
+}
+
+
+.to-faqs{
+	width: 50%;
+	height: 500px;
+	margin: 90px 20px; 
+}
+
+.date-picker {
+	position: relative;
+	width: 100%;
+	max-width: 290px;
+	height: 50px;
+	/* margin: 10px auto; */
+	/* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); */
+	border: 1px solid #707070;
+	border-radius: 25px;
+
+	
+	user-select: none;
+}
+
+.date-picker:hover {
+	background-color: #F3F3F3;
+}
+
+.date-picker .selected-date {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content:space-around ;
+	align-items: center;
+
+	color: #313131;
+	font-size: 20px;
+	background-color: #FFF;
+	border-radius: 25px;
+
+	
+}
+
+div.date-picker div.selected-date svg{
+	height: 60%;
+}
+
+.date-picker .dates {
+	display: none;
+	position: absolute;
+	top: 140%;
+	left: 0;
+	right: 0;
+
+	background-color: #FFF;
+}
+
+.date-picker .dates.active {
+	display: block;
+}
+
+.date-picker .dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #414141 ;
+	color: white;
+	/* border-bottom: 2px solid #EEE; */
+}
+
+.date-picker .dates .month .arrows {
+	width: 35px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 12px;
+}
+
+.date-picker .dates .month .arrows:active {
+	background-color: #757575;
+}
+
+.date-picker .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: fit-content;
+	background-color: #f2f2f2;
+	
+}
+
+.date-picker .dates .days .day { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+	transition: background-color 0.2s;
+	cursor: pointer;
+	height: 35px;
+}
+
+.date-picker .dates .days :hover{
+	box-shadow: 0rem 0rem 0.2rem #4465cc;
+	/* border: 0.01cm solid #4465cc; */
+		
+}
+
+.date-picker .dates .days .day.selected {
+	background-color: #bdc7e6;
+}
+
+.prev-date:hover{
+	box-shadow:none!important;
+}
+
+.week{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 35px;
+	background-color:#f2f2f2;
+}
+
+.week p{
+	align-self:center;
+	justify-self: center;
+	font-weight: bolder;
+	font-size: 14px;
+}
