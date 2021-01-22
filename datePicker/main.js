@@ -112,8 +112,6 @@ populateDates();
 function populateDates (e) {
 	days_element.innerHTML = '';
 
-	
-	date
 
 	let first = new Date(year, month, 1);
 	let dayFirst = first.getDay();
