@@ -111,19 +111,18 @@ populateDates();
 
 function populateDates (e) {
 	days_element.innerHTML = '';
-	const prevLastDay = new Date(
-		date.getFullYear(),
-		month,
-		0
-	  ).getDate();
+
 	
-	const firstDayIndex = date.getDay();
+	date
+
+	let first = new Date(year, month, 1);
+	let dayFirst = first.getDay();
 	
 	let amount_days = daysPerMonth(month);
 	
 	// calcular cuantos dias le sobran  
 	let days = '';
-	for (let x = firstDayIndex; x > 0; x--) {
+	for (let x = dayFirst; x > 0; x--) {
 		days += `<div class="prev-date"></div>`;
 	}
 	days_element.innerHTML = days;
