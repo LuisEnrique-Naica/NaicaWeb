@@ -80,17 +80,20 @@ div.date-picker div.selected-date svg{
 }
 
 .date-picker .dates {
-	display: none;
+	/* display: none; */
+	max-height: 0;
+	overflow: hidden;
 	position: absolute;
 	top: 140%;
 	left: 0;
 	right: 0;
+	transition: max-height 0.3s ease-out;
 
 	background-color: #FFF;
 }
 
 .date-picker .dates.active {
-	display: block;
+	/* display: block; */
 }
 
 .date-picker .dates .month {

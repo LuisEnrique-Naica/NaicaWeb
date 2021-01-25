@@ -76,9 +76,15 @@ function toggleDatePickerToDays() {
 }
 
 function toggleDatePicker (e) {
-	if (!checkEventPathForClass(e.path, 'dates')) {
-		dates_element.classList.toggle('active');
+	// if (!checkEventPathForClass(e.path, 'dates')) {
+	// 	dates_element.classList.toggle('active');
+	// }
+	if(dates_element.style.maxHeight){
+		dates_element.style.maxHeight = null;
+	}else{
+		dates_element.style.maxHeight = dates_element.scrollHeight + "px";
 	}
+	console.log(dates_element.style.maxHeight , dates_element.style.scrollHeight)
 }
 
 function goToNextMonth (e) {
