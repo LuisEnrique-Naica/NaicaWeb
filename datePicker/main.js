@@ -115,7 +115,11 @@ function populateDates (e) {
 
 	let first = new Date(year, month, 1);
 	let dayFirst = first.getDay();
-	
+
+	let actualDay = new Date();
+	let actDay = actualDay.getDate();
+
+
 	let amount_days = daysPerMonth(month);
 	
 	// calcular cuantos dias le sobran  
@@ -133,8 +137,15 @@ function populateDates (e) {
 		if (selectedDay == (i + 1) && selectedYear == year && selectedMonth == month) {
 			day_element.classList.add('selected');
 		}
+		if ((i + 1) < actDay || selectedMonth < month || selectedYear < year) {
+			day_element.classList.remove('day');
+			day_element.classList.add('disabledTime');
+		}
+		// console.log(selectedDay , i, actDay)
 
 		day_element.addEventListener('click', function (e) {
+			if( day_element.classList.contains('day')){
+
 			let daySelectManual = e.target.innerHTML;
 			daySelectManual = parseInt(daySelectManual) ;
 
@@ -149,6 +160,8 @@ function populateDates (e) {
 			selected_date_element.textContent = formatDate(selectedDate);
 			selected_date_element.dataset.value = `${year}-${selectedMonth}-${daySelectManual}`;
 			populateDates();
+			}
+
 		});
 
 		days_element.appendChild(day_element);
