@@ -161,3 +161,16 @@ div.date-picker div.selected-date svg{
 	font-weight: bolder;
 	font-size: 14px;
 }
+
+.disabledTime { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	color: #a0a0a0;
+	cursor: not-allowed;
+}
+
+.disabledTime:hover{
+	box-shadow:none!important;
+}
