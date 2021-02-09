@@ -5,6 +5,9 @@ const mth_element = document.querySelector('.date-picker .dates .month .mth');
 const next_mth_element = document.querySelector('.date-picker .dates .month .next-mth');
 const prev_mth_element = document.querySelector('.date-picker .dates .month .prev-mth');
 const days_element = document.querySelector('.date-picker .dates .days');
+const monts_year_element = document.querySelector('.month-year');
+const monts_year_element_selected = document.querySelectorAll('.month-year p');
+const month_selected = document.querySelector('.mth')
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -68,23 +71,60 @@ date_picker_element.addEventListener('click', toggleDatePicker);
 next_mth_element.addEventListener('click', goToNextMonth);
 prev_mth_element.addEventListener('click', goToPrevMonth);
 days_element.addEventListener('click', toggleDatePickerToDays)
+mth_element.addEventListener('click', toggleMonths)
+
+
+monts_year_element_selected.forEach(elem => {
+	elem.addEventListener('click', changeMonth)
+})
+
 
 // FUNCTIONS
 
-function toggleDatePickerToDays() {
-	dates_element.classList.toggle('active')
+
+function changeMonth(e) {
+	console.log(e.value, e, e.currentTarget.id);
+	if(!checkEventPathForClass(e.path, 'month-year p')){
+		mth_element.textContent = months[e.currentTarget.id] + ' ' + year;
+		date.setMonth(parseInt(e.currentTarget.id));
+		month = parseInt(e.currentTarget.id)
+		populateDates();
+	}
+		
+		if(monts_year_element.style.maxHeight){
+			monts_year_element.style.maxHeight = null;
+		}else{
+			monts_year_element.style.maxHeight = monts_year_element.scrollHeight + "px";
+		}
+		
+	}
+
+function toggleMonths() {
+
+	if(monts_year_element.style.maxHeight){
+		monts_year_element.style.maxHeight = null;
+	}else{
+		monts_year_element.style.maxHeight = monts_year_element.scrollHeight + "px";
+	}
 }
 
-function toggleDatePicker (e) {
-	// if (!checkEventPathForClass(e.path, 'dates')) {
-	// 	dates_element.classList.toggle('active');
-	// }
+function toggleDatePickerToDays() {
 	if(dates_element.style.maxHeight){
 		dates_element.style.maxHeight = null;
 	}else{
 		dates_element.style.maxHeight = dates_element.scrollHeight + "px";
 	}
-	console.log(dates_element.style.maxHeight , dates_element.style.scrollHeight)
+}
+
+function toggleDatePicker (e) {
+	if (!checkEventPathForClass(e.path, 'dates')) {
+		if(dates_element.style.maxHeight){
+			dates_element.style.maxHeight = null;
+		}else{
+			dates_element.style.maxHeight = dates_element.scrollHeight + "px";
+		}
+	}
+	// console.log(dates_element.style.maxHeight , dates_element.style.scrollHeight)
 }
 
 function goToNextMonth (e) {
@@ -116,6 +156,14 @@ populateDates();
 
 
 function populateDates (e) {
+	let monthReal = new Date();
+	let actualMonth = monthReal.getMonth();
+	monts_year_element_selected.forEach((ed,index) => {
+		if( actualMonth == index ){
+			ed.classList.add('selected-month')
+		}
+	})
+	
 	days_element.innerHTML = '';
 
 
@@ -144,8 +192,8 @@ function populateDates (e) {
 			day_element.classList.add('selected');
 		}
 		if ((i + 1) < actDay || selectedMonth < month || selectedYear < year) {
-			day_element.classList.remove('day');
-			day_element.classList.add('disabledTime');
+			// day_element.classList.remove('day');
+			// day_element.classList.add('disabledTime');
 		}
 		// console.log(selectedDay , i, actDay)
 

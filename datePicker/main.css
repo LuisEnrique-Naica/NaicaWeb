@@ -46,7 +46,7 @@ h1 span {
 	width: 100%;
 	max-width: 290px;
 	height: 50px;
-	/* margin: 10px auto; */
+	margin: 10px auto;
 	/* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); */
 	border: 1px solid #707070;
 	border-radius: 25px;
@@ -109,6 +109,7 @@ div.date-picker div.selected-date svg{
 	align-items: center;
 	color: white;
 	font-size: 12px;
+	cursor: pointer;
 }
 
 .date-picker .dates .month .arrows:active {
@@ -118,7 +119,7 @@ div.date-picker div.selected-date svg{
 .date-picker .dates .days {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	height: fit-content;
+	height: 200px;
 	background-color: #f2f2f2;
 	
 }
@@ -172,4 +173,44 @@ div.date-picker div.selected-date svg{
 
 .disabledTime:hover{
 	box-shadow:none!important;
+}
+
+
+
+/* months */ 
+
+.month-year{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/* height: 234px; */
+	max-height: 0;
+	background-color: #f2f2f2;
+	overflow: hidden;
+	position: absolute;
+	top: 17%;
+	left: 0;
+	right: 0;
+	transition: max-height 0.3s ease-out;
+}
+
+.month-year p {
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 78px;
+	cursor: pointer;
+}
+
+.month-year p.selected-month{
+	background-color: #bdc7e6;
+}
+
+.month-year p:hover{
+	box-shadow: 0rem 0rem 0.2rem #4465cc;
+}
+
+
+.mth{
+	cursor: pointer;
 }
