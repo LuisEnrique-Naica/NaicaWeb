@@ -1,4 +1,5 @@
 const date_picker_element = document.querySelector('.date-picker');
+const selected_date = document.querySelector('.date-picker .selected-date ');
 const selected_date_element = document.querySelector('.date-picker .selected-date .text-selected-date');
 const dates_element = document.querySelector('.date-picker .dates');
 const mth_element = document.querySelector('.date-picker .dates .month .mth');
@@ -67,7 +68,7 @@ function daysPerMonth(val){
 
 
 // EVENT LISTENERS
-date_picker_element.addEventListener('click', toggleDatePicker);
+selected_date.addEventListener('click', toggleDatePicker);
 next_mth_element.addEventListener('click', goToNextMonth);
 prev_mth_element.addEventListener('click', goToPrevMonth);
 days_element.addEventListener('click', toggleDatePickerToDays)
@@ -83,8 +84,9 @@ monts_year_element_selected.forEach(elem => {
 
 
 function changeMonth(e) {
-	console.log(e.value, e, e.currentTarget.id);
-	if(!checkEventPathForClass(e.path, 'month-year p')){
+	console.log(e.value, e, e.target.tagName);
+	// if(!checkEventPathForClass(e.path, 'month-year p')){
+	if(e.target.tagName == 'P'){
 		mth_element.textContent = months[e.currentTarget.id] + ' ' + year;
 		date.setMonth(parseInt(e.currentTarget.id));
 		month = parseInt(e.currentTarget.id)
@@ -117,7 +119,9 @@ function toggleDatePickerToDays() {
 }
 
 function toggleDatePicker (e) {
-	if (!checkEventPathForClass(e.path, 'dates')) {
+	console.log(e, e.target.className)
+	// if (!checkEventPathForClass(e.path, 'dates')) {
+		if(e.target.className == 'text-selected-date' || e.target.className == 'selected-date'){
 		if(dates_element.style.maxHeight){
 			dates_element.style.maxHeight = null;
 		}else{
@@ -183,6 +187,16 @@ function populateDates (e) {
 	}
 	days_element.innerHTML = days;
 
+	let d1 = Date.now();
+	let d2 = new Date(year, month, day).getTime();
+
+	let m = new Date();
+	let n = m.getMonth();
+	let y = m.getFullYear();
+
+	//calculo de fechas
+	if(d1 < d2 ){
+
 	for (let i = 0; i < amount_days; i++) {
 		const day_element = document.createElement('div');
 		day_element.classList.add('day');
@@ -191,11 +205,6 @@ function populateDates (e) {
 		if (selectedDay == (i + 1) && selectedYear == year && selectedMonth == month) {
 			day_element.classList.add('selected');
 		}
-		if ((i + 1) < actDay || selectedMonth < month || selectedYear < year) {
-			// day_element.classList.remove('day');
-			// day_element.classList.add('disabledTime');
-		}
-		// console.log(selectedDay , i, actDay)
 
 		day_element.addEventListener('click', function (e) {
 			if( day_element.classList.contains('day')){
@@ -220,12 +229,50 @@ function populateDates (e) {
 
 		days_element.appendChild(day_element);
 	}
+	}else{
+		for (let i = 0; i < amount_days; i++) {
+			const day_element = document.createElement('div');
+			day_element.classList.add('day');
+			day_element.textContent = i + 1;
 	
-	// for (let j = 1; j <= nextDays; j++) {
-	// 	days += `<div class="next-date">${j}</div>`;
-	// 	days_element.innerHTML += days;
-	//   }
+			if (selectedDay == (i + 1) && selectedYear == year && selectedMonth == month) {
+				day_element.classList.add('selected');
+			}
+			if ((i + 1) < actDay ) {
+				day_element.classList.remove('day');
+				day_element.classList.add('disabledTime');
+			}
+			if(month < n || year < y ){
+				day_element.classList.remove('day');
+				day_element.classList.add('disabledTime');
+			}
+	
+			day_element.addEventListener('click', function (e) {
+				if( day_element.classList.contains('day')){
+	
+				let daySelectManual = e.target.innerHTML;
+				daySelectManual = parseInt(daySelectManual) ;
+	
+				console.log(daySelectManual)
+	
+				selectedDate = new Date(year,month, daySelectManual);
+				selectedDay = daySelectManual;
+				selectedMonth = month + 1;
+				selectedYear = year;
+	
+	
+				selected_date_element.textContent = formatDate(selectedDate);
+				selected_date_element.dataset.value = `${year}-${selectedMonth}-${daySelectManual}`;
+				populateDates();
+				}
+	
+			});
+	
+			days_element.appendChild(day_element);
+		}
+	}
 
+	
 }
 
 // MORE FUNCTIONS
@@ -253,4 +300,3 @@ function formatDate (d) {
 
 	return day + ' / ' + month + ' / ' + year;
 }
-
