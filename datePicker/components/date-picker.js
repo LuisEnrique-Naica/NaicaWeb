@@ -343,7 +343,8 @@ class PickerComponent extends HTMLElement {
 	}
 
 	toggleDatePicker(e) {
-			if(e.target.className == 'text-selected-date' || e.target.className == 'selected-date'){
+		console.log(e.target)
+			if(e.target.className == 'text-selected-date' || e.target.className == 'selected-date' || e.target.tagName == 'svg'){
 				if(this.$dates_element.style.maxHeight){
 					this.$dates_element.style.maxHeight = null;
 				}else{
