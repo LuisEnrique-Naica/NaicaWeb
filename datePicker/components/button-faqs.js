@@ -55,7 +55,7 @@ class  btnFAQS extends HTMLElement {
 
         this.$container = this._sR.querySelector('.button-container');
         this.$text = this._sR.querySelector('.content');
-        this.$complement = this._sR.querySelector('.text-component')
+        this.$complement = this._sR.querySelector('.text-component');
 
         //evento para la caja
         this.$container.addEventListener('click',() => {
